@@ -160,7 +160,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": 0,
     "sonarjs/prefer-immediate-return": 0,
-    "sonarjs/no-duplicate-string": ["warn", 4],
+    "sonarjs/no-duplicate-string": ["warn", { "threshold": 5 }],
     "sonarjs/no-small-switch": 0
   },
   "settings": {
