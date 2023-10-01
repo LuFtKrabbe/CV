@@ -1,0 +1,22 @@
+.column-photo {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 10%;
+  margin: 5%;
+}
+
+.column-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: rgb(250, 243, 235);
+  border-radius: 20px;
+}

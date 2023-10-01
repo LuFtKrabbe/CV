@@ -1,0 +1,35 @@
+@import './column.scss';
+@import './main.scss';
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 800px;
+}
+
+.profile-column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  background-color: rgb(252, 213, 154);
+}
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
