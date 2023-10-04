@@ -1,5 +1,5 @@
 import './App.scss';
-import Profile from './pages/profile';
+import Profile from './pages/print/profile';
 
 function App() {
   return <Profile></Profile>;

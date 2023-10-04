@@ -1,0 +1,58 @@
+.main-header {
+  box-sizing: border-box;
+  height: 20%;
+  width: 100%;
+  padding: 3%;
+  background-color: rgb(226, 255, 255);
+}
+
+.header-name {
+  font-size: 2rem;
+}
+
+.header-name {
+  font-size: 2rem;
+}
+
+.header-profession {
+  font-size: 1.2rem;
+}
+
+.main-about {
+  width: 95%;
+  height: 20%;
+  font-size: 1.4rem;
+  & .about-header {
+    border-bottom: solid 2px grey;
+  }
+  & .about-text {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+  }
+}
+
+.main-exprerience {
+  width: 95%;
+  height: 20%;
+  font-size: 1.4rem;
+  & .exprerience-header {
+    border-bottom: solid 2px grey;
+  }
+  & .exprerience-text {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+  }
+}
+
+.main-education {
+  width: 95%;
+  height: 20%;
+  font-size: 1.4rem;
+  & .education-header {
+    border-bottom: solid 2px grey;
+  }
+  & .education-text {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+  }
+}
