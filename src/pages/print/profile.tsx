@@ -1,5 +1,8 @@
 import { FC } from 'react';
 
+import EduBlock from '../../modules/education/education';
+import { universityFirst, universitySecond } from '../../modules/education/eduData';
+
 const Profile: FC = (): JSX.Element => {
   return (
     <div className="profile-wrapper">
@@ -37,7 +40,10 @@ const Profile: FC = (): JSX.Element => {
             </div>
             <div className="main-education">
               <div className="education-header">EDUCATION</div>
-              <div className="education-text">GASU is the best university for me</div>
+              <div className="education-container">
+                {EduBlock(universitySecond)}
+                {EduBlock(universityFirst)}
+              </div>
             </div>
           </div>
         </div>

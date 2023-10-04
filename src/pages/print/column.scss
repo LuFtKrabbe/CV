@@ -25,11 +25,9 @@
     @include flex(flex, center, center);
     width: 100%;
     font-size: 1.4rem;
-    border-top: solid 2px $color-column-divider;
     border-bottom: solid 2px $color-column-divider;
   }
 }
-
 
 .column-skills {
   @include flex(flex, center, center, column);
@@ -40,7 +38,6 @@
     @include flex(flex, center, center);
     width: 100%;
     font-size: 1.4rem;
-    border-top: solid 2px $color-column-divider;
     border-bottom: solid 2px $color-column-divider;
   }
   & .skills-text {

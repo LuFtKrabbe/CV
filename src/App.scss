@@ -1,4 +1,18 @@
+html {
+  font-size: 14px;
+}
+
+// Utilities //
+
 @import './styles/colors.scss';
 @import './styles/mixins.scss';
 
-@import './pages/print/profile.scss'
+
+// Pages //
+
+@import './pages/print/profile.scss';
+
+
+// Modules //
+
+@import './modules/education/education.scss';

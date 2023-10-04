@@ -1,0 +1,48 @@
+.edu-container {
+  @include flex(flex, flex-start, flex-start);
+  margin: 15px 0;
+  width: 100%;
+}
+
+.edu-name-city-years {
+  @include flex(flex, flex-start, flex-start, column);
+  width: 30%;
+  height: 70px;
+  & .edu-name {
+    font-size: 1.0rem;
+    font-weight: 700;
+  }
+  & .edu-city {
+    font-size: 0.9rem;
+  }
+  & .edu-years {
+    font-size: 1.0rem;
+  }
+}
+
+.edu-degree-text {
+  @include flex(flex, flex-start, flex-start, column);
+  box-sizing: border-box;
+  position: relative;
+  border-left: solid 1px $color-main-edu-divider;
+  width: 70%;
+  height: 70px;
+  padding: 0 0 0 10px;
+  & .edu-degree {
+    font-size: 1.0rem;
+    font-weight: 700;
+  }
+  & .edu-text {
+    font-size: 1.0rem;
+  }
+  &:before {
+    position: absolute;
+    left: -4px;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: $color-main-edu-divider;
+  }
+}
