@@ -3,7 +3,7 @@
   height: 20%;
   width: 100%;
   padding: 3%;
-  background-color: rgb(226, 255, 255);
+  background-color: $color-main-header;
 }
 
 .header-name {
@@ -23,7 +23,7 @@
   height: 20%;
   font-size: 1.4rem;
   & .about-header {
-    border-bottom: solid 2px grey;
+    border-bottom: solid 2px $color-main-divider;
   }
   & .about-text {
     margin: 10px 0 0 0;
@@ -36,7 +36,7 @@
   height: 20%;
   font-size: 1.4rem;
   & .exprerience-header {
-    border-bottom: solid 2px grey;
+    border-bottom: solid 2px $color-main-divider;
   }
   & .exprerience-text {
     margin: 10px 0 0 0;
@@ -49,7 +49,7 @@
   height: 20%;
   font-size: 1.4rem;
   & .education-header {
-    border-bottom: solid 2px grey;
+    border-bottom: solid 2px $color-main-divider;
   }
   & .education-text {
     margin: 10px 0 0 0;

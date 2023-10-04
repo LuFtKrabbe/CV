@@ -1,8 +1,6 @@
 .column-photo {
+  @include flex(flex, center, center);
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 200px;
   height: 200px;
   background-color: antiquewhite;
@@ -12,54 +10,38 @@
 }
 
 .column-contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex(flex, center, center, column);
   width: 200px;
   height: 200px;
-  background-color: rgb(250, 243, 235);
   border-radius: 20px;
 }
 
 .column-languages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex(flex, center, center, column);
   width: 200px;
   height: 200px;
-  background-color: rgb(250, 243, 235);
   border-radius: 20px;
   & .languages-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(flex, center, center);
     width: 100%;
     font-size: 1.4rem;
-    border-top: solid 2px grey;
-    border-bottom: solid 2px grey;
+    border-top: solid 2px $color-column-divider;
+    border-bottom: solid 2px $color-column-divider;
   }
 }
 
 
 .column-skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex(flex, center, center, column);
   width: 200px;
   height: 200px;
-  background-color: rgb(250, 243, 235);
   border-radius: 20px;
   & .skills-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(flex, center, center);
     width: 100%;
     font-size: 1.4rem;
-    border-top: solid 2px grey;
-    border-bottom: solid 2px grey;
+    border-top: solid 2px $color-column-divider;
+    border-bottom: solid 2px $color-column-divider;
   }
   & .skills-text {
     margin: 10px 0 0 0;

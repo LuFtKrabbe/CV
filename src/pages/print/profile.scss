@@ -2,42 +2,30 @@
 @import './main.scss';
 
 .profile-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center);
 }
 
 .profile-format {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center);
   padding: 10px;
 }
 
 .profile-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center);
   border-radius: 20px;
   width: 780px;
   height: 1103px;
 }
 
 .profile-column {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  @include flex(flex, center, flex-start, column);
   width: 35%;
   height: 100%;
-  background-color: rgb(252, 213, 154);
+  background-color: $color-column;
 }
 
 .profile-main {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  @include flex(flex, center, flex-start, column);
   width: 65%;
   height: 100%;
 }
