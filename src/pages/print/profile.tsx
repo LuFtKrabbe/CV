@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 import EduBlock from '../../modules/education/education';
 import { universityFirst, universitySecond } from '../../modules/education/eduData';
+import WorkBlock from '../../modules/work/work';
+import { workFirst } from '../../modules/work/workData';
 
 const Profile: FC = (): JSX.Element => {
   return (
@@ -36,7 +38,9 @@ const Profile: FC = (): JSX.Element => {
             </div>
             <div className="main-exprerience">
               <div className="exprerience-header">WORK EXPERIENCE</div>
-              <div className="exprerience-text">Do something in the company</div>
+              <div className="exprerience-container">
+                {WorkBlock(workFirst)}
+              </div>
             </div>
             <div className="main-education">
               <div className="education-header">EDUCATION</div>

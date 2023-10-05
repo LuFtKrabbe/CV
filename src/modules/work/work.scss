@@ -1,0 +1,50 @@
+.work-container {
+  @include flex(flex, flex-start, flex-start);
+  margin: 15px 0;
+  width: 100%;
+  height: 80px;
+}
+
+.work-name-city-years {
+  @include flex(flex, flex-start, flex-start, column);
+  width: 30%;
+  height: 100%;
+  & .work-name {
+    font-size: 1.0rem;
+    font-weight: 700;
+  }
+  & .work-city {
+    font-size: 0.9rem;
+  }
+  & .work-years {
+    font-size: 1.0rem;
+  }
+}
+
+.work-degree-text {
+  @include flex(flex, flex-start, flex-start, column);
+  box-sizing: border-box;
+  position: relative;
+  border-left: solid 1px $color-main-work-divider;
+  text-align: justify;
+  width: 70%;
+  height: 100%;
+  padding: 0 0 0 10px;
+  & .work-degree {
+    font-size: 1.0rem;
+    font-weight: 700;
+  }
+  & .work-text {
+    font-size: 1.0rem;
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    left: -4px;
+    border-radius: 5px;
+    background-color: $color-main-work-divider;
+  }
+}
