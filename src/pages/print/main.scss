@@ -2,6 +2,7 @@
   box-sizing: border-box;
   height: 15%;
   width: 100%;
+  color: $color-main-header-text;
   padding: 3%;
   background-color: $color-main-header;
 }
@@ -23,7 +24,7 @@
   height: 20%;
   font-size: 1.4rem;
   & .about-header {
-    border-bottom: solid 2px $color-main-divider;
+    border-bottom: solid 1px $color-main-divider;
   }
   & .about-text {
     margin: 10px 0 0 0;
@@ -36,7 +37,7 @@
   height: 20%;
   font-size: 1.4rem;
   & .exprerience-header {
-    border-bottom: solid 2px $color-main-divider;
+    border-bottom: solid 1px $color-main-divider;
   }
   & .exprerience-container {
     margin: 10px 0 0 0;
@@ -48,7 +49,7 @@
   height: 20%;
   font-size: 1.4rem;
   & .education-header {
-    border-bottom: solid 2px $color-main-divider;
+    border-bottom: solid 1px $color-main-divider;
   }
   & .education-container {
     margin: 10px 0 0 0;
