@@ -44,6 +44,18 @@
   }
 }
 
+.main-courses {
+  width: 95%;
+  height: 20%;
+  font-size: 1.4rem;
+  & .courses-header {
+    border-bottom: solid 1px $color-main-divider;
+  }
+  & .courses-container {
+    margin: 10px 0 0 0;
+  }
+}
+
 .main-education {
   width: 95%;
   height: 20%;
