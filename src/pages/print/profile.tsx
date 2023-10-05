@@ -4,6 +4,8 @@ import EduBlock from '../../modules/education/education';
 import { universityFirst, universitySecond } from '../../modules/education/eduData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
+import LangBlock from '../../modules/language/language';
+import { langFirst, langSecond } from '../../modules/language/langData';
 
 const Profile: FC = (): JSX.Element => {
   return (
@@ -19,8 +21,10 @@ const Profile: FC = (): JSX.Element => {
             </div>
             <div className="column-languages">
               <div className="languages-header">LANGUAGES</div>
-              <div className="languages-english">English</div>
-              <div className="languages-german">German</div>
+              <div className="languages-container">
+                {LangBlock(langFirst)}
+                {LangBlock(langSecond)}
+              </div>
             </div>
             <div className="column-skills">
               <div className="skills-header">SKILLS</div>

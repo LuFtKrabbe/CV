@@ -19,13 +19,13 @@
 
 .profile-column {
   @include flex(flex, center, flex-start, column);
-  width: 35%;
+  width: 30%;
   height: 100%;
   background-color: $color-column;
 }
 
 .profile-main {
   @include flex(flex, center, flex-start, column);
-  width: 65%;
+  width: 70%;
   height: 100%;
 }

@@ -27,6 +27,11 @@
     font-size: 1.4rem;
     border-bottom: solid 2px $color-column-divider;
   }
+  & .languages-container {
+    @include flex(flex, center, center, column);
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
 }
 
 .column-skills {

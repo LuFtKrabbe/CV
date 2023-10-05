@@ -1,0 +1,33 @@
+.lang-block {
+  @include flex(flex, flex-start, flex-start, column);
+  width: 100%;
+  height: 40px;
+}
+
+.lang-name-lvl {
+  @include flex(flex, center, space-between);
+  width: 100%;
+  height: 100%;
+  & .lang-name {
+    font-size: 1.0rem;
+    font-weight: 700;
+  }
+  & .lang-lvl {
+    font-size: 1.0rem;
+  }
+}
+
+.lang-graph {
+  @include flex(flex, center, center);
+  width: 100%;
+  height: 20px;
+  & .lang-degree {
+    width: 100%;
+    height: 5px;
+    background-color: $color-column-lang-background;
+    & .lang-fullness {
+      height: 100%;
+      background-color: $color-column-lang-fullness;
+    }
+  }
+}
