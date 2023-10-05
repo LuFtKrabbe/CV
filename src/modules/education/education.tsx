@@ -2,7 +2,7 @@ import { EduData } from './eduData';
 
 const EduBlock = (university: EduData): JSX.Element => {
   return (
-    <div className="edu-container">
+    <div className="edu-block">
       <div className="edu-name-city-years">
         <div className="edu-name">{ university.name }</div>
         <div className="edu-city">{ university.city }</div>

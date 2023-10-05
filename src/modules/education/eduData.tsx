@@ -12,7 +12,7 @@ export const universityFirst: EduData = {
   city: 'Saint Petersburg',
   yearStart: '2015',
   yearFinish: '2019',
-  degree: 'Bachelor degree',
+  degree: 'Bachelor of Science, civil engineering',
   description: 'Description',
 };
 
@@ -21,6 +21,6 @@ export const universitySecond: EduData = {
   city: 'Saint Petersburg',
   yearStart: '2019',
   yearFinish: '2021',
-  degree: 'Master degree',
+  degree: 'Master of Science, civil engineering',
   description: 'Description',
 };

@@ -38,9 +38,8 @@
   & .exprerience-header {
     border-bottom: solid 2px $color-main-divider;
   }
-  & .exprerience-text {
+  & .exprerience-container {
     margin: 10px 0 0 0;
-    font-size: 1rem;
   }
 }
 
@@ -51,8 +50,7 @@
   & .education-header {
     border-bottom: solid 2px $color-main-divider;
   }
-  & .education-text {
+  & .education-container {
     margin: 10px 0 0 0;
-    font-size: 1rem;
   }
 }

@@ -1,13 +1,14 @@
-.edu-container {
+.edu-block {
   @include flex(flex, flex-start, flex-start);
-  margin: 15px 0;
+  margin: 0px 0;
   width: 100%;
+  height: 70px;
 }
 
 .edu-name-city-years {
   @include flex(flex, flex-start, flex-start, column);
   width: 30%;
-  height: 70px;
+  height: 100%;
   & .edu-name {
     font-size: 1.0rem;
     font-weight: 700;
@@ -25,8 +26,9 @@
   box-sizing: border-box;
   position: relative;
   border-left: solid 1px $color-main-edu-divider;
+  text-align: justify;
   width: 70%;
-  height: 70px;
+  height: 100%;
   padding: 0 0 0 10px;
   & .edu-degree {
     font-size: 1.0rem;

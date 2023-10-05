@@ -10,19 +10,19 @@
 }
 
 .column-contacts {
-  @include flex(flex, center, center, column);
+  @include flex(flex, flex-start, flex-start, column);
   width: 200px;
   height: 200px;
   border-radius: 20px;
 }
 
 .column-languages {
-  @include flex(flex, center, center, column);
+  @include flex(flex, center, flex-start, column);
   width: 200px;
   height: 200px;
   border-radius: 20px;
   & .languages-header {
-    @include flex(flex, center, center);
+    @include flex(flex, center, flex-start);
     width: 100%;
     font-size: 1.4rem;
     border-bottom: solid 2px $color-column-divider;
@@ -30,12 +30,12 @@
 }
 
 .column-skills {
-  @include flex(flex, center, center, column);
+  @include flex(flex, center, flex-start, column);
   width: 200px;
   height: 200px;
   border-radius: 20px;
   & .skills-header {
-    @include flex(flex, center, center);
+    @include flex(flex, center, flex-start);
     width: 100%;
     font-size: 1.4rem;
     border-bottom: solid 2px $color-column-divider;
