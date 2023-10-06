@@ -1,0 +1,19 @@
+.skills-tag {
+  @include flex(flex, flex-start, flex-start, column);
+  width: 100%;
+  margin: 0 0 6px 0;
+  & .tag-header {
+    font-weight: 700;
+  }
+  & .tag-container {
+    @include flex(flex, flex-start, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
+    & .tag-list {
+      margin: 5px 3px 0 3px;
+      background-color: $color-column-skills-tag;
+      padding: 2px 10px 3px 10px;
+      border-radius: 5px;
+    }
+  }
+}

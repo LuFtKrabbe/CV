@@ -8,6 +8,8 @@ import { universityFirst, universitySecond } from '../../modules/education/eduDa
 import EduBlock from '../../modules/education/education';
 import { langFirst, langSecond } from '../../modules/language/langData';
 import LangBlock from '../../modules/language/language';
+import SkillsBlock from '../../modules/skills/skills';
+import { skills } from '../../modules/skills/skillsData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
 
@@ -28,7 +30,7 @@ const Profile: FC = (): JSX.Element => {
             </div>
             <div className="column-skills">
               <div className="skills-header">SKILLS</div>
-              <div className="skills-text">HTML, CSS, JS</div>
+              <div className="skills-container">{SkillsBlock(skills)}</div>
             </div>
           </div>
           <div className="profile-main">
@@ -40,16 +42,16 @@ const Profile: FC = (): JSX.Element => {
               <div className="about-header">ABOUT ME</div>
               <div className="about-text">I was born since living Dinosaurs</div>
             </div>
-            <div className="main-exprerience">
-              <div className="exprerience-header">WORK EXPERIENCE</div>
-              <div className="exprerience-container">{WorkBlock(workFirst)}</div>
-            </div>
             <div className="main-courses">
               <div className="courses-header">COURSES</div>
               <div className="courses-container">
                 {CoursesBlock(coursesFrontEnd)}
                 {CoursesBlock(coursesPreFrontEnd)}
               </div>
+            </div>
+            <div className="main-exprerience">
+              <div className="exprerience-header">WORK EXPERIENCE</div>
+              <div className="exprerience-container">{WorkBlock(workFirst)}</div>
             </div>
             <div className="main-education">
               <div className="education-header">EDUCATION</div>
