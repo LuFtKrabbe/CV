@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 // Utilities //
@@ -10,6 +10,8 @@ html {
 
 // Pages //
 
+@import './pages/print/column.scss';
+@import './pages/print/main.scss';
 @import './pages/print/profile.scss';
 
 
@@ -21,3 +23,4 @@ html {
 @import './modules/contacts/contacts.scss';
 @import './modules/courses/courses.scss';
 @import './modules/skills/skills.scss';
+@import './modules/projects/projects.scss';
