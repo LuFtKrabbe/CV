@@ -1,8 +1,6 @@
-@import './column.scss';
-@import './main.scss';
-
 .profile-wrapper {
   @include flex(flex, center, center);
+  margin: 0 auto;
 }
 
 .profile-format {
@@ -12,7 +10,6 @@
 
 .profile-content {
   @include flex(flex, center, center);
-  border-radius: 20px;
   width: 780px;
   height: 1103px;
 }
@@ -22,10 +19,13 @@
   width: 30%;
   height: 100%;
   background-color: $color-column;
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px; 
 }
 
 .profile-main {
   @include flex(flex, center, flex-start, column);
   width: 70%;
   height: 100%;
+  border-bottom-right-radius: 10px; 
 }
