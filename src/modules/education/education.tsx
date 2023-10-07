@@ -10,9 +10,13 @@ const EduBlock = (university: EduData): JSX.Element => {
           {university.yearStart}-{university.yearFinish}
         </div>
       </div>
-      <div className="edu-degree-text">
-        <div className="edu-degree">{university.degree}</div>
-        <div className="edu-text">{university.description}</div>
+      <div className="edu-degree-descrition">
+        <div className="edu-degree">
+          {university.degree}
+          {university.honor ? <div className="edu-honor">with honor</div> : <></>}
+        </div>
+        <div className="edu-department">Department: {university.department}</div>
+        <div className="edu-description">{university.description}</div>
       </div>
     </div>
   );

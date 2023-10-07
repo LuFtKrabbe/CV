@@ -4,23 +4,30 @@ export type EduData = {
   yearStart: string;
   yearFinish: string;
   degree: string;
+  department: string;
   description: string;
+  honor: boolean;
 };
 
 export const universityFirst: EduData = {
-  name: 'SPBSUACE',
+  name: 'SPSUACE',
   city: 'Saint Petersburg',
   yearStart: '2015',
   yearFinish: '2019',
-  degree: 'Bachelor of Science, civil engineering',
-  description: 'Description',
+  honor: true,
+  degree: 'Bachelor of Science in Civil engineering',
+  department: 'Steel and Timber constructions.',
+  description: 'Graduation work is related to the design of the transportation hyperloop system made of steel.',
 };
 
 export const universitySecond: EduData = {
-  name: 'SPBSUACE',
+  name: 'SPSUACE',
   city: 'Saint Petersburg',
   yearStart: '2019',
   yearFinish: '2021',
-  degree: 'Master of Science, civil engineering',
-  description: 'Description',
+  honor: true,
+  degree: 'Master of Science in Civil engineering',
+  department: 'Steel and Timber constructions.',
+  description:
+    'Analysis of the pre-stressed and large-span steel structures such as hyperloop and overhead power lines.',
 };
