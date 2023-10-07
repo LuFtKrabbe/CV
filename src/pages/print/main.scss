@@ -1,6 +1,6 @@
 .main-header {
   box-sizing: border-box;
-  height: 15%;
+  height: 12%;
   width: 100%;
   color: $color-main-header-text;
   padding: 3%;
@@ -21,7 +21,7 @@
 
 .main-about {
   width: 95%;
-  height: 20%;
+  margin: 10px 0 0 0;
   font-size: 1.4rem;
   & .about-header {
     border-bottom: solid 1px $color-main-divider;
@@ -29,12 +29,13 @@
   & .about-text {
     margin: 10px 0 0 0;
     font-size: 1rem;
+    text-align: justify;
   }
 }
 
 .main-exprerience {
   width: 95%;
-  height: 20%;
+  margin: 10px 0 0 0;
   font-size: 1.4rem;
   & .exprerience-header {
     border-bottom: solid 1px $color-main-divider;
@@ -46,7 +47,7 @@
 
 .main-courses {
   width: 95%;
-  height: 20%;
+  margin: 10px 0 0 0;
   font-size: 1.4rem;
   & .courses-header {
     border-bottom: solid 1px $color-main-divider;
@@ -62,6 +63,7 @@
   font-size: 1.4rem;
   & .education-header {
     border-bottom: solid 1px $color-main-divider;
+    margin: 0 0 15px 0;
   }
   & .education-container {
     margin: 10px 0 0 0;
