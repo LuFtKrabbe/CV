@@ -46,7 +46,12 @@ const Profile: FC = (): JSX.Element => {
             <div className="main-header">
               <div className="header-name">Alexander Filimonov</div>
               <div className="header-profession">Frontend-developer</div>
-              <NavLink to="/portfolio" className="header-portfolio">portfolio</NavLink>
+              <div className="header-links">
+                <NavLink to="/portfolio" className="header-vk">VK</NavLink>
+                <NavLink to="/portfolio" className="header-github">Github</NavLink>
+                <NavLink to="/portfolio" className="header-portfolio">Portfolio</NavLink>
+                <NavLink to="/portfolio" className="header-achievements">Achievements</NavLink>
+              </div>
             </div>
             <div className="main-about">
               <div className="about-header">ABOUT ME</div>
