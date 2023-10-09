@@ -1,8 +1,10 @@
-import './App.scss';
-import Profile from './pages/print/profile';
+import { FC } from 'react';
 
-function App() {
-  return <Profile></Profile>;
-}
+import AppRouter from './pages/appRouter';
+import './App.scss';
+
+const App: FC = (): JSX.Element => {
+  return <AppRouter />
+};
 
 export default App;

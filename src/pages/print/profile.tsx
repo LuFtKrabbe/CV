@@ -20,6 +20,7 @@ import SkillsBlock from '../../modules/skills/skills';
 import { skills } from '../../modules/skills/skillsData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
+import { NavLink } from 'react-router-dom';
 
 const Profile: FC = (): JSX.Element => {
   return (
@@ -45,6 +46,7 @@ const Profile: FC = (): JSX.Element => {
             <div className="main-header">
               <div className="header-name">Alexander Filimonov</div>
               <div className="header-profession">Frontend-developer</div>
+              <NavLink to="/portfolio" className="header-portfolio">portfolio</NavLink>
             </div>
             <div className="main-about">
               <div className="about-header">ABOUT ME</div>

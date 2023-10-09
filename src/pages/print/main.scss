@@ -6,14 +6,17 @@
   padding: 3%;
   background-color: $color-main-header;
   border-top-right-radius: 10px;
-}
-
-.header-name {
-  font-size: 2rem;
-}
-
-.header-profession {
-  font-size: 1.2rem;
+  & .header-name {
+    font-size: 2rem;
+  }
+  & .header-profession {
+    font-size: 1.2rem;
+  }
+  & .header-portfolio {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $color-main-header-text;
+  }
 }
 
 .main-about {
