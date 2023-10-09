@@ -9,7 +9,7 @@
 }
 
 .portfolio-content {
-  @include flex(flex, center, center, column);
+  @include flex(flex, center, flex-start, column);
   width: 780px;
   height: 1103px;
   border: solid 1px $color-portfolio-content-frame;
@@ -20,13 +20,20 @@
   @include flex(flex, flex-start, flex-start, column);
   font-size: 2rem;
   width: 100%;
-  height: 10%;
+  height: 100px;
   color: $color-main-header-text;
   background-color: $color-main-header;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   & .header-name {
     margin: 10px 0 0 20px;
+  }
+  & .header-back {
+    @include flex(flex, flex-end, center);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $color-main-header-text;
+    margin: 20px 0 0 20px;
   }
 }
 
@@ -35,4 +42,5 @@
   width: 95%;
   height: 90%;
   border-bottom-right-radius: 10px;
+  margin: 5px;
 }

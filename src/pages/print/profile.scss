@@ -12,6 +12,8 @@
   @include flex(flex, center, center);
   width: 780px;
   height: 1103px;
+  border: solid 1px $color-portfolio-content-frame;
+  border-radius: 10px;
 }
 
 .profile-column {

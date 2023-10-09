@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 import ContactsBlock from '../../modules/contacts/contacts';
 import { contacts } from '../../modules/contacts/contactsData';
 import CoursesBlock from '../../modules/courses/courses';
@@ -20,7 +22,6 @@ import SkillsBlock from '../../modules/skills/skills';
 import { skills } from '../../modules/skills/skillsData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
-import { NavLink } from 'react-router-dom';
 
 const Profile: FC = (): JSX.Element => {
   return (
@@ -47,28 +48,40 @@ const Profile: FC = (): JSX.Element => {
               <div className="header-name">Alexander Filimonov</div>
               <div className="header-profession">Frontend-developer</div>
               <div className="header-links">
-                <NavLink to="/portfolio" className="header-vk">VK</NavLink>
-                <NavLink to="/portfolio" className="header-github">Github</NavLink>
-                <NavLink to="/portfolio" className="header-portfolio">Portfolio</NavLink>
-                <NavLink to="/portfolio" className="header-achievements">Achievements</NavLink>
+                <NavLink to="/portfolio" className="header-vk">
+                  VK
+                </NavLink>
+                <NavLink to="/portfolio" className="header-github">
+                  Github
+                </NavLink>
+                <NavLink to="/portfolio" className="header-portfolio">
+                  Portfolio
+                </NavLink>
+                <NavLink to="/portfolio" className="header-achievements">
+                  Achievements
+                </NavLink>
               </div>
             </div>
             <div className="main-about">
               <div className="about-header">ABOUT ME</div>
               <div className="about-text">
-                Looking for a job as a Junior front-end developer.
-                <br></br>
-                Well trained and ready to work specialist. I have a good technical education and an analytical mind
-                which help me to handle with assigned tasks. I can work well with the documentation and clearly follow
-                the requirements that are defined in the technical specifications.
-                <br></br>I love to create projects from scratch, developing an idea and paying attention to the details
-                for users' comfort.
-                <br></br>I really proud of the final project where I could show myself as a team leader. My main
-                responsibilities were to plan and control work progress according to the agile Scrum metodology, make
-                code reviews and finally approve and merge pull requests. As a result our team made a real project using
-                Commercetools - cloud-based headless commerce platform that provides APIs to power e-commerce sales.
-                <br></br>
-                You can see all of my projects in my portfolio!
+                <div>Looking for a job as a Junior front-end developer.</div>
+                <div>
+                  Well trained and ready to work specialist. I have a good technical education and an analytical mind
+                  which help me to handle with assigned tasks. I can work well with the documentation and clearly follow
+                  the requirements that are defined in the technical specifications.
+                </div>
+                <div>
+                  I love to create projects from scratch, developing an idea and paying attention to the details for
+                  users' comfort and good interaction.
+                </div>
+                <div>
+                  I really proud of the final project where I could show myself as a team leader. My main
+                  responsibilities were to plan and control work progress according to the agile Scrum metodology, make
+                  code reviews and finally approve and merge pull requests. As a result our team made a real project
+                  using Commercetools - cloud-based headless commerce platform that provides APIs.
+                </div>
+                <div>You can see all of my projects in my portfolio.</div>
               </div>
             </div>
             <div className="main-projects">

@@ -7,9 +7,9 @@ export type SkillsData = {
 };
 
 export const skills: SkillsData = {
-  main: ['HTML5', 'CSS3', 'SASS', 'JavaScript', 'TypeScript', 'Git & GitHub', 'ESLint', 'Webpack'],
+  main: ['HTML5', 'CSS3', 'SASS', 'JavaScript', 'TypeScript', 'Git & GitHub', 'ESLint', 'Webpack', 'VSCode'],
   libraries: ['React', 'Ant Design'],
-  basics: ['Node.js', 'Jest'],
+  basics: ['Node.js', 'Jest', 'BEM'],
   programs: ['Figma', 'Postman', 'Jira', 'AutoCAD', 'Paint.NET'],
   os: ['Windows', 'Linux: Ubuntu'],
 };

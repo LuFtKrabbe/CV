@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 import {
   projectsAsyncRace,
   projectsCommerce,
@@ -20,6 +22,9 @@ const Portfolio: FC = (): JSX.Element => {
         <div className="portfolio-content">
           <div className="portfolio-content-header">
             <div className="header-name">Portfolio</div>
+            <NavLink to="/profile" className="header-back">
+              ← Back
+            </NavLink>
           </div>
           <div className="portfolio-content-main">
             {ProjectsExpandBlock(projectsCommerce)}

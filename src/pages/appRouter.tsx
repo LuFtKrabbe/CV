@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import Profile from './print/profile';
 import Portfolio from './portfolio/portfolio';
+import Profile from './print/profile';
 
 const AppRouter: FC = (): JSX.Element => {
   return (

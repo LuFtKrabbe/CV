@@ -17,7 +17,7 @@
 .header-links {
   @include flex(flex, space-between, space-evenly);
   width: 100%;
-  margin: 20px 0 0 0;
+  margin: 26px 0 0 0;
   & .header-vk,
   .header-github,
   .header-portfolio, 
@@ -26,7 +26,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: $color-main-header-text;
-    margin: 0 0 0 10px;
+    padding: 5px 10px;
     &:before {
       content: '';
       display: block;
@@ -35,6 +35,10 @@
       margin: 0 8px 0 0;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+    &:hover {
+      background-color: $color-main-button;
+      border-radius: 5px;
     }
   }
   & .header-vk:before {
@@ -62,6 +66,7 @@
     margin: 10px 0 0 0;
     font-size: 1rem;
     text-align: justify;
+    text-indent: 14px;
   }
 }
 

@@ -49,7 +49,7 @@ export const projectsKeyboard: ProjectsData = {
   name: 'Virtual Keyboard',
   type: 'Functional application',
   picture: imageKeyboard,
-  description: `Virtual Keyboard with layout in Russian and English.`,
+  description: `Virtual Keyboard with Russian and English layout.`,
   descriptionExpand: `Virtual Keyboard with animated keystrokes and layout in Russian and English. The printed text corresponds 
   to the characters displayed on the virtual keyboard when using a mouse or a physical keyboard. All application elements 
   are generated with JavaScript.`,
@@ -59,7 +59,7 @@ export const projectsMinesweeper: ProjectsData = {
   name: 'Minesweeper',
   type: 'Game application',
   picture: imageMinesweeper,
-  description: `The project is executed using vanilla JavaScript. Set up the game and play! Light and dark themes are available.`,
+  description: `The project is executed using vanilla JavaScript. Set up the game and play with Light or Dark theme.`,
   descriptionExpand: `The version of the original application with full functionality: choose the size of the field, set 
   the number of mines, watch the current values on the info board and look at the table of records. The game has sounds
   and dark and light color design.`,
@@ -78,7 +78,7 @@ export const projectsSelectors: ProjectsData = {
   name: 'CSS Selectors',
   type: 'Game and study application',
   picture: imageSelectors,
-  description: `The project is executed using TypeScript and ES6+ features. Learn the CSS selectors in playing form!`,
+  description: `The project is executed using TypeScript and ES6+ features. Learn the CSS selectors in playing form.`,
   descriptionExpand: `A simulator for learning css selectors, which contains 10 game levels. For the user comfort, the 
   code and game entities are highlighted when hovering, the progress of the levels is shown in the panel and it is 
   possible to take a hint.`,
@@ -88,7 +88,7 @@ export const projectsAsyncRace: ProjectsData = {
   name: 'Asynchronous race',
   type: 'Game SPA',
   picture: imageRace,
-  description: `The SPA is executed using REST architecture with local server interaction. Launch the cars!`,
+  description: `The SPA is executed using REST architecture with local server interaction.`,
   descriptionExpand: `Add or change cars, run each one individually or arrange a race. Keep track of their movement and 
   condition on the track and view progress in the high score table. All actions take place in communication with 
   the local server.`,
