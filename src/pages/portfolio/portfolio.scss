@@ -1,0 +1,38 @@
+.portfolio-wrapper {
+  @include flex(flex, center, center);
+  margin: 0 auto;
+}
+
+.portfolio-format {
+  @include flex(flex, center, center);
+  padding: 10px;
+}
+
+.portfolio-content {
+  @include flex(flex, center, center, column);
+  width: 780px;
+  height: 1103px;
+  border: solid 1px $color-portfolio-content-frame;
+  border-radius: 10px;
+}
+
+.portfolio-content-header {
+  @include flex(flex, flex-start, flex-start, column);
+  font-size: 2rem;
+  width: 100%;
+  height: 10%;
+  color: $color-main-header-text;
+  background-color: $color-main-header;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  & .header-name {
+    margin: 10px 0 0 20px;
+  }
+}
+
+.portfolio-content-main {
+  @include flex(flex, center, flex-start, column);
+  width: 95%;
+  height: 90%;
+  border-bottom-right-radius: 10px;
+}

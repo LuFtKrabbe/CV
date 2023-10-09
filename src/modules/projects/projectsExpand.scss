@@ -1,0 +1,40 @@
+.projectsExpand-block {
+  @include flex(flex, flex-start, flex-start);
+  width: 100%;
+  height: 10%;
+  margin: 6px 0;
+}
+
+.projectsExpand-imageContainer {
+  @include flex(flex, center, center);
+  width: 25%;
+  height: 100%;
+  & .projectsExpand-image {
+    width: 100%;
+    height: 100%;
+    border: solid 1px $color-portfolio-images;
+    border-radius: 10px;
+  }
+}
+
+.projectsExpand-container {
+  @include flex(flex, flex-start, flex-start, column);
+  box-sizing: border-box;
+  position: relative;
+  text-align: justify;
+  width: 75%;
+  height: 100%;
+  padding: 0 0 0 10px;
+  & .projectsExpand-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0 0 0 0;
+  }
+  & .projectsExpand-type {
+    padding: 0 0 4px 0;
+  }
+  & .projectsExpand-container {
+    font-size: 1.0rem;
+    padding: 4px 0 4px 0;
+  }
+}
