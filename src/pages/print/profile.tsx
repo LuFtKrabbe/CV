@@ -48,10 +48,10 @@ const Profile: FC = (): JSX.Element => {
               <div className="header-name">Alexander Filimonov</div>
               <div className="header-profession">Frontend-developer</div>
               <div className="header-links">
-                <NavLink to="/portfolio" className="header-vk">
+                <NavLink to="https://vk.com/luftkrabbe" className="header-vk">
                   VK
                 </NavLink>
-                <NavLink to="/portfolio" className="header-github">
+                <NavLink to="https://github.com/LuFtKrabbe" className="header-github">
                   Github
                 </NavLink>
                 <NavLink to="/portfolio" className="header-portfolio">
