@@ -59,27 +59,33 @@ const Achievements: FC = (): JSX.Element => {
                 </div>
               </div>
             </div>
-            <div className="achievements-courses-header">COURSES</div>
-            <div className="achievements-courses-text">
-              There are some courses that I have passed:
-              <li>
-                <span>{coursesFrontEnd.organization}:</span> {coursesFrontEnd.name};
-              </li>
-              <li>
-                <span>{coursesTypeScript.organization}:</span> {coursesTypeScript.name};
-              </li>
-              <li>
-                <span>{coursesPreFrontEnd.organization}:</span> {coursesPreFrontEnd.name};
-              </li>
-              <li>
-                <span>{coursesCommandLine.organization}:</span> {coursesCommandLine.name};
-              </li>
-              <li>
-                <span>{coursesGit.organization}:</span> {coursesGit.name}.
-              </li>
-              <li>
-                <span>{coursesTriada.organization}:</span> {coursesTriada.name}.
-              </li>
+            <div className="achievements-courses-header">COURSES & ACTIVITIES</div>
+            <div className="achievements-courses-container">
+              <div className="achievements-courses-text">
+                There are some of completed courses:
+                <li>
+                  <span>{coursesFrontEnd.organization}:</span> {coursesFrontEnd.name};
+                </li>
+                <li>
+                  <span>{coursesTypeScript.organization}:</span> {coursesTypeScript.name};
+                </li>
+                <li>
+                  <span>{coursesPreFrontEnd.organization}:</span> {coursesPreFrontEnd.name};
+                </li>
+                <li>
+                  <span>{coursesCommandLine.organization}:</span> {coursesCommandLine.name};
+                </li>
+                <li>
+                  <span>{coursesGit.organization}:</span> {coursesGit.name}.
+                </li>
+                <li>
+                  <span>{coursesTriada.organization}:</span> {coursesTriada.name}.
+                </li>
+              </div>
+              <div className="achievements-activities">
+                <div className="activities-name">Codewars:</div>
+                <img src='https://www.codewars.com/users/LuFtKrabbe/badges/large'></img>
+              </div>
             </div>
             <div className="achievements-certificate-header">CERTIFICATES</div>
             <div className="achievements-certificate-main">

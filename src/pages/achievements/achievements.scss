@@ -37,6 +37,21 @@
   }
 }
 
+.achievements-science-articles {
+  @include flex(flex, flex-start, center);
+  width: 100%;
+  margin: 4px 0 0 0;
+  & .articles-journals {
+    @include flex(flex, center, space-evenly);
+    & .articles-image {
+      height: 170px;
+      border-radius: 3px;
+      border: 1px solid grey;
+      margin: 0 0 0 10px;
+    }
+  }
+}
+
 .achievements-content-main {
   @include flex(flex, center, flex-start, column);
   width: 95%;
@@ -58,7 +73,17 @@
     font-size: 1.0rem;
     text-indent: 14px;
   }
+  & .achievements-certificate-main {
+    @include flex(flex, flex-start, space-evenly);
+    width: 100%;
+  }
+}
+
+.achievements-courses-container {
+  @include flex(flex, flex-start, center);
+  width: 100%;
   & .achievements-courses-text {
+    width: 60%;
     li {
       list-style-type: "– ";
       margin: 1px 0 0 5px;
@@ -70,23 +95,15 @@
       }
     }
   }
-  & .achievements-certificate-main {
-    @include flex(flex, flex-start, center);
-    width: 100%;
-  }
-}
-
-.achievements-science-articles {
-  @include flex(flex, flex-start, center);
-  width: 100%;
-  margin: 4px 0 0 0;
-  & .articles-journals {
-    @include flex(flex, center, space-evenly);
-    & .articles-image {
-      height: 170px;
-      border-radius: 3px;
-      border: 1px solid grey;
-      margin: 0 0 0 10px;
+  & .achievements-activities {
+    @include flex(flex, flex-start, flex-start, column);
+    width: 40%;
+    & .activities-name {
+      margin: 0 0 5px 0;
+      font-weight: 700;
+    }
+    & img {
+      width: 100%;
     }
   }
-}
+} 
