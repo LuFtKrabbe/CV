@@ -1,4 +1,4 @@
-import { SkillsData, skills } from './skillsData';
+import { SkillsData } from './skillsData';
 
 const SkillsBlock = (skills: SkillsData): JSX.Element => {
   return (

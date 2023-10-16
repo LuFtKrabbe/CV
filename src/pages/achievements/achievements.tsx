@@ -16,6 +16,13 @@ import {
   coursesGit,
   coursesTriada,
 } from '../../modules/courses/coursesData';
+import JournalsBlock from '../../modules/journals/journals';
+import {
+  journalsArchitecture,
+  journalsFoundation,
+  journalsTransportation2019,
+  journalsTransportation2021,
+} from '../../modules/journals/journalsData';
 
 const Achievements: FC = (): JSX.Element => {
   return (
@@ -36,12 +43,20 @@ const Achievements: FC = (): JSX.Element => {
                 dedicated to transportaion systems and overhead power lines.
               </div>
               <div>
-                As author and co-author I have written 11 articles with publications in VAK and Scopus levels. I took
-                part in 12 scientific conferences.
+                I took part in 12 scientific conferences. As author and co-author I have written 11 articles with
+                publications in VAK and Scopus levels. There are some of them:
               </div>
-              <div>
-                Some of my activity was related to the Navy and as a result I have an educational program about
-                submarines system.
+              <div className="achievements-science-articles">
+                <div className="articles-list">
+                  {JournalsBlock(journalsTransportation2019)}
+                  {JournalsBlock(journalsArchitecture)}
+                  {JournalsBlock(journalsTransportation2021)}
+                  {JournalsBlock(journalsFoundation)}
+                </div>
+                <div className="articles-journals">
+                  <img className="articles-image" src={journalsTransportation2019.picture}></img>
+                  <img className="articles-image" src={journalsArchitecture.picture}></img>
+                </div>
               </div>
             </div>
             <div className="achievements-courses-header">COURSES</div>

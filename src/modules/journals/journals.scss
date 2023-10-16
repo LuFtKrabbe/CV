@@ -1,0 +1,15 @@
+.journal-name-article {
+  @include flex(flex, flex-start, flex-start, column);
+  margin: 0 0 5px 0;
+}
+
+.journal-name {
+  align-self: flex-end;
+  color: grey;
+}
+
+.journal-article {
+  @include flex(flex, flex-start, flex-start, column);
+  font-weight: 700;
+}
+

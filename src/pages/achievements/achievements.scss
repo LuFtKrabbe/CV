@@ -11,7 +11,7 @@
 .achievements-content {
   @include flex(flex, center, flex-start, column);
   width: 780px;
-  //height: 1103px;
+  max-height: 1103px;
   border: solid 1px $color-portfolio-content-frame;
   border-radius: 10px;
 }
@@ -57,6 +57,8 @@
     width: 100%;
     font-size: 1.0rem;
     text-indent: 14px;
+  }
+  & .achievements-courses-text {
     li {
       list-style-type: "– ";
       margin: 1px 0 0 5px;
@@ -71,5 +73,20 @@
   & .achievements-certificate-main {
     @include flex(flex, flex-start, center);
     width: 100%;
+  }
+}
+
+.achievements-science-articles {
+  @include flex(flex, flex-start, center);
+  width: 100%;
+  margin: 4px 0 0 0;
+  & .articles-journals {
+    @include flex(flex, center, space-evenly);
+    & .articles-image {
+      height: 170px;
+      border-radius: 3px;
+      border: 1px solid grey;
+      margin: 0 0 0 10px;
+    }
   }
 }
