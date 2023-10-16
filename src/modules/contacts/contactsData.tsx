@@ -5,7 +5,7 @@ export type ContactsData = {
 };
 
 export const contacts: ContactsData = {
-  tel: '8 (953) 342-**-**',
-  email: 'Filimonov.***@ya.ru',
+  tel: '8 (921) 986-20-53',
+  email: 'A.S.Filimonov.Job@yandex.ru',
   location: 'Saint Petersburg',
 };

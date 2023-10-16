@@ -54,7 +54,7 @@ export const projectsKeyboard: ProjectsData = {
   type: 'Functional application',
   link: 'https://luftkrabbe.github.io/virtual-keyboard/src/index.html',
   picture: imageKeyboard,
-  description: `Virtual Keyboard with Russian and English layout.`,
+  description: `Virtual Keyboard with Russian and English layout, nice design and animated keys.`,
   descriptionExpand: `Virtual Keyboard with animated keystrokes and layout in Russian and English. The printed text corresponds 
   to the characters displayed on the virtual keyboard when using a mouse or a physical keyboard. All application elements 
   are generated with JavaScript.`,

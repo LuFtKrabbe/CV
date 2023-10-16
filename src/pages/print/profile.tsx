@@ -22,6 +22,7 @@ import SkillsBlock from '../../modules/skills/skills';
 import { skills } from '../../modules/skills/skillsData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
+import imageMe from '../../assets/me.png';
 
 const Profile: FC = (): JSX.Element => {
   return (
@@ -29,7 +30,7 @@ const Profile: FC = (): JSX.Element => {
       <div className="profile-format">
         <div className="profile-content">
           <div className="profile-column">
-            <div className="column-photo"></div>
+            <img src={imageMe} className="column-photo"></img>
             <div className="column-contacts">{ContactsBlock(contacts)}</div>
             <div className="column-languages">
               <div className="languages-header">LANGUAGES</div>
@@ -65,21 +66,21 @@ const Profile: FC = (): JSX.Element => {
             <div className="main-about">
               <div className="about-header">ABOUT ME</div>
               <div className="about-text">
-                <div>Looking for a job as a Junior front-end developer.</div>
+                <div>Looking for a job as a Junior frontend-developer.</div>
                 <div>
                   Well trained and ready to work specialist. I have a good technical education and an analytical mind
                   which help me to handle with assigned tasks. I can work well with the documentation and clearly follow
                   the requirements that are defined in the technical specifications.
                 </div>
                 <div>
-                  I love to create projects from scratch, developing an idea and paying attention to the details for
-                  users' comfort and good interaction.
+                  I love to create projects from scratch developing an idea and also pay attention to the details for
+                  users comfort and their good interaction with product.
                 </div>
                 <div>
                   I really proud of the final project where I could show myself as a team leader. My main
                   responsibilities were to plan and control work progress according to the agile Scrum metodology, make
                   code reviews and finally approve and merge pull requests. As a result our team made a real project
-                  using Commercetools - cloud-based headless commerce platform that provides APIs.
+                  using Commercetools - cloud-based headless commerce platform.
                 </div>
                 <div>You can see all of my projects in my portfolio.</div>
               </div>
