@@ -57,7 +57,7 @@ const Profile: FC = (): JSX.Element => {
                 <NavLink to="/portfolio" className="header-portfolio">
                   Portfolio
                 </NavLink>
-                <NavLink to="/portfolio" className="header-achievements">
+                <NavLink to="/achievements" className="header-achievements">
                   Achievements
                 </NavLink>
               </div>
