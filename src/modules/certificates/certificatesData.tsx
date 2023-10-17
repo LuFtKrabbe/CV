@@ -1,7 +1,7 @@
+import imageEnglish from '../../assets/certificates/english.png';
 import imageFrontEndPreSchool from '../../assets/certificates/js-fe-preschool.png';
 import imageFrontEnd from '../../assets/certificates/js-fe.png';
 import imageTypeScript from '../../assets/certificates/ms-typescript.png';
-import imageEnglish from '../../assets/certificates/english.png';
 
 export type CertificatesData = {
   name: string;

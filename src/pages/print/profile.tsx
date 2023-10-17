@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import { NavLink } from 'react-router-dom';
 
+import imageMe from '../../assets/me.png';
 import ContactsBlock from '../../modules/contacts/contacts';
 import { contacts } from '../../modules/contacts/contactsData';
 import CoursesBlock from '../../modules/courses/courses';
@@ -22,7 +23,6 @@ import SkillsBlock from '../../modules/skills/skills';
 import { skills } from '../../modules/skills/skillsData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
-import imageMe from '../../assets/me.png';
 
 const Profile: FC = (): JSX.Element => {
   return (
