@@ -11,8 +11,7 @@
 .column-contacts {
   @include flex(flex, flex-start, flex-start, column);
   width: 200px;
-  margin: 10px 0 20px 0;
-  border-radius: 20px;
+  margin: 0 0 15px 0;
 }
 
 .column-languages {

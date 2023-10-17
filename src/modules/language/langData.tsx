@@ -6,8 +6,8 @@ export type LangData = {
 
 export const langFirst: LangData = {
   name: 'English',
-  lvl: 'B2',
-  percent: '70%',
+  lvl: 'C1',
+  percent: '80%',
 };
 
 export const langSecond: LangData = {

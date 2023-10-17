@@ -7,6 +7,7 @@ import {
   certificatesFrontEndPreschool,
   certificatesTypeScript,
   certificatesFrontEnd,
+  certificatesEnglish,
 } from '../../modules/certificates/certificatesData';
 import {
   coursesFrontEnd,
@@ -23,6 +24,7 @@ import {
   journalsTransportation2019,
   journalsTransportation2021,
 } from '../../modules/journals/journalsData';
+import imageEnglishBadge from '../../assets/certificates/english-min.png';
 
 const Achievements: FC = (): JSX.Element => {
   return (
@@ -43,8 +45,8 @@ const Achievements: FC = (): JSX.Element => {
                 dedicated to transportaion systems and overhead power lines.
               </div>
               <div>
-                I took part in 12 scientific conferences. As author and co-author I have written 11 articles with
-                publications in VAK and Scopus levels. There are some of them:
+                I took part in 12 scientific conferences and as author and co-author I have written 11 articles with
+                publications in VAK and Scopus levels.
               </div>
               <div className="achievements-science-articles">
                 <div className="articles-list">
@@ -62,7 +64,7 @@ const Achievements: FC = (): JSX.Element => {
             <div className="achievements-courses-header">COURSES & ACTIVITIES</div>
             <div className="achievements-courses-container">
               <div className="achievements-courses-text">
-                There are some of completed courses:
+                <div className="courses-name">Completed courses:</div>
                 <li>
                   <span>{coursesFrontEnd.organization}:</span> {coursesFrontEnd.name};
                 </li>
@@ -84,13 +86,17 @@ const Achievements: FC = (): JSX.Element => {
               </div>
               <div className="achievements-activities">
                 <div className="activities-name">Codewars:</div>
-                <img src='https://www.codewars.com/users/LuFtKrabbe/badges/large'></img>
+                <img src="https://www.codewars.com/users/LuFtKrabbe/badges/large" className="activities-codewars"></img>
+                <div className="activities-name">English:</div>
+                <div>In reading and listening according to CEFR</div>
+                <img src={imageEnglishBadge} className="activities-english"></img>
               </div>
             </div>
             <div className="achievements-certificate-header">CERTIFICATES</div>
             <div className="achievements-certificate-main">
               {CertificatesBlock(certificatesFrontEndPreschool)}
               {CertificatesBlock(certificatesTypeScript)}
+              {CertificatesBlock(certificatesEnglish)}
               {CertificatesBlock(certificatesFrontEnd)}
             </div>
           </div>

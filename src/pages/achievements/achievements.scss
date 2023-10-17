@@ -40,14 +40,14 @@
 .achievements-science-articles {
   @include flex(flex, flex-start, center);
   width: 100%;
-  margin: 4px 0 0 0;
+  margin: 14px 0 0 0;
   & .articles-journals {
     @include flex(flex, center, space-evenly);
     & .articles-image {
       height: 170px;
       border-radius: 3px;
       border: 1px solid grey;
-      margin: 0 0 0 10px;
+      margin: 0 0 0 14px;
     }
   }
 }
@@ -72,6 +72,10 @@
     width: 100%;
     font-size: 1.0rem;
     text-indent: 14px;
+    & .courses-name {
+      font-weight: 700;
+      margin: 0 0 3px 0;
+    }
   }
   & .achievements-certificate-main {
     @include flex(flex, flex-start, space-evenly);
@@ -83,7 +87,7 @@
   @include flex(flex, flex-start, center);
   width: 100%;
   & .achievements-courses-text {
-    width: 60%;
+    width: 55%;
     li {
       list-style-type: "– ";
       margin: 1px 0 0 5px;
@@ -97,13 +101,19 @@
   }
   & .achievements-activities {
     @include flex(flex, flex-start, flex-start, column);
-    width: 40%;
+    width: 45%;
     & .activities-name {
-      margin: 0 0 5px 0;
       font-weight: 700;
     }
-    & img {
-      width: 100%;
+    & .activities-codewars {
+      margin: 3px 0 3px 0;
+      align-self: center;
+      width: 90%;
+    }
+    & .activities-english {
+      margin: 3px 0 3px 0;
+      align-self: center;
+      width: 60%;
     }
   }
 } 

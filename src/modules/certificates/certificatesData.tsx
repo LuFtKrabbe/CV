@@ -1,6 +1,7 @@
 import imageFrontEndPreSchool from '../../assets/certificates/js-fe-preschool.png';
 import imageFrontEnd from '../../assets/certificates/js-fe.png';
 import imageTypeScript from '../../assets/certificates/ms-typescript.png';
+import imageEnglish from '../../assets/certificates/english.png';
 
 export type CertificatesData = {
   name: string;
@@ -20,4 +21,9 @@ export const certificatesTypeScript: CertificatesData = {
 export const certificatesFrontEnd: CertificatesData = {
   name: 'JavaScript/Front-end',
   picture: imageFrontEnd,
+};
+
+export const certificatesEnglish: CertificatesData = {
+  name: 'English level on the EF SET score scale according to CEFR',
+  picture: imageEnglish,
 };
