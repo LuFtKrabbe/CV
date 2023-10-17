@@ -13,7 +13,7 @@ const EduBlock = (university: EduData): JSX.Element => {
       <div className="edu-degree-descrition">
         <div className="edu-degree">
           {university.degree}
-          {university.honor ? <div className="edu-honor">with honor</div> : <></>}
+          {university.honor ? <div className="edu-honor">with honor</div> : null}
         </div>
         <div className="edu-department">Department: {university.department}</div>
         <div className="edu-description">{university.description}</div>
