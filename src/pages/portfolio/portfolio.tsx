@@ -9,7 +9,6 @@ import {
   projectsKeyboard,
   projectsMinesweeper,
   projectsMomentum,
-  projectsNewsletter,
   projectsPlants,
   projectsSelectors,
   projectsShelter,
