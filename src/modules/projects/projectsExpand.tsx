@@ -9,9 +9,14 @@ const ProjectsExpandBlock = (projectsExpand: ProjectsData): JSX.Element => {
       <div className="projectsExpand-container">
         <div className="projectsExpand-name">{projectsExpand.name}</div>
         <div className="projectsExpand-type">
-          {projectsExpand.type} ·{' '}
-          <a href={projectsExpand.link} className="projectsExpand-link">
-            link
+          {projectsExpand.type}
+          &nbsp;·&nbsp;
+          <a href={projectsExpand.linkDeploy} className="projectsExpand-link">
+            Deploy
+          </a>
+          &nbsp;·&nbsp;
+          <a href={projectsExpand.linkRepo} className="projectsExpand-link">
+            GitHub
           </a>
         </div>
         <div className="projectsExpand-description">{projectsExpand.descriptionExpand}</div>

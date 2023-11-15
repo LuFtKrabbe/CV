@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import {
   projectsAsyncRace,
   projectsCommerce,
+  projectsImperialDB,
   projectsKeyboard,
   projectsMinesweeper,
   projectsMomentum,
@@ -27,10 +28,10 @@ const Portfolio: FC = (): JSX.Element => {
             </NavLink>
           </div>
           <div className="portfolio-content-main">
+            {ProjectsExpandBlock(projectsImperialDB)}
             {ProjectsExpandBlock(projectsCommerce)}
             {ProjectsExpandBlock(projectsAsyncRace)}
             {ProjectsExpandBlock(projectsSelectors)}
-            {ProjectsExpandBlock(projectsNewsletter)}
             {ProjectsExpandBlock(projectsMinesweeper)}
             {ProjectsExpandBlock(projectsKeyboard)}
             {ProjectsExpandBlock(projectsShelter)}

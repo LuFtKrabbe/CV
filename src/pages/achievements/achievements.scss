@@ -11,7 +11,6 @@
 .achievements-content {
   @include flex(flex, center, flex-start, column);
   width: 780px;
-  max-height: 1103px;
   border: solid 1px $color-portfolio-content-frame;
   border-radius: 10px;
 }
@@ -66,6 +65,9 @@
     border-bottom: solid 1px $color-main-divider;
     margin: 10px 0 10px 0;
   }
+  & .achievements-certificate-header {
+    margin: 0 0 10px 0;
+  }
   & .achievements-science-text,
    .achievements-courses-text {
     text-align: justify;
@@ -114,6 +116,19 @@
       margin: 3px 0 3px 0;
       align-self: center;
       width: 60%;
+    }
+    & .activities-english {
+      margin: 3px 0 3px 0;
+      align-self: center;
+      width: 60%;
+    }
+  }
+  & .activities-aws {
+    @include flex(flex, center, center);
+    & .activities-aws-badge {
+      margin: 0px 5px;
+      align-self: center;
+      width: 20%;
     }
   }
 } 

@@ -1,3 +1,4 @@
+import imageAWS from '../../assets/certificates/aws.png';
 import imageEnglish from '../../assets/certificates/english.png';
 import imageFrontEndPreSchool from '../../assets/certificates/js-fe-preschool.png';
 import imageFrontEnd from '../../assets/certificates/js-fe.png';
@@ -26,4 +27,9 @@ export const certificatesFrontEnd: CertificatesData = {
 export const certificatesEnglish: CertificatesData = {
   name: 'English level on the EF SET score scale according to CEFR',
   picture: imageEnglish,
+};
+
+export const certificatesAWS: CertificatesData = {
+  name: 'AWS Fundamentals',
+  picture: imageAWS,
 };

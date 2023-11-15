@@ -14,5 +14,5 @@ export const workFirst: WorkData = {
   yearFinish: '2021',
   position: 'Constructor engineer',
   description: `Calculations of steel and reinforced concrete load-bearing structures: 
-  industrial buildings, steel galleries and supports of power lines.`,
+  industrial buildings, steel galleries and towers of power lines.`,
 };

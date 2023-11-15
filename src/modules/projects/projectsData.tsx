@@ -1,4 +1,5 @@
 import imageCommerce from '../../assets/projects/commerce.png';
+import imageImperial from '../../assets/projects/imperial.png';
 import imageKeyboard from '../../assets/projects/keyboard.png';
 import imageMinesweeper from '../../assets/projects/minesweeper.png';
 import imageMomentum from '../../assets/projects/momentum.png';
@@ -11,7 +12,8 @@ import imageShelter from '../../assets/projects/shelter.png';
 export type ProjectsData = {
   name: string;
   type: string;
-  link: string;
+  linkDeploy: string;
+  linkRepo: string;
   picture: string;
   description: string;
   descriptionExpand: string;
@@ -20,7 +22,8 @@ export type ProjectsData = {
 export const projectsPlants: ProjectsData = {
   name: 'Plants',
   type: 'Landing page',
-  link: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFEPRESCHOOL2022Q4/plants/#contacts',
+  linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFEPRESCHOOL2022Q4/plants/',
+  linkRepo: 'https://github.com/LuFtKrabbe/plants/tree/plants-part3/plants',
   picture: imagePlants,
   description: `A landing page that sales plants and care services. Adaptive and responsive layout 
   for mobile and desktop devices.`,
@@ -31,7 +34,8 @@ export const projectsPlants: ProjectsData = {
 export const projectsMomentum: ProjectsData = {
   name: 'Momentum',
   type: 'Functional application',
-  link: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFEPRESCHOOL2022Q4/momentum/',
+  linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFEPRESCHOOL2022Q4/momentum/',
+  linkRepo: 'https://github.com/LuFtKrabbe/momentum/tree/momentum/momentum',
   picture: imageMomentum,
   description: `A landing page that sales plants and care services. Adaptive and responsive layout for mobile and desktop devices.`,
   descriptionExpand: `The app shows the time and greets the user, who can also choose a suitable background from the image
@@ -42,7 +46,8 @@ export const projectsMomentum: ProjectsData = {
 export const projectsShelter: ProjectsData = {
   name: 'Shelter',
   type: 'Two-page website',
-  link: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/shelter/#our-friends',
+  linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/shelter',
+  linkRepo: 'https://github.com/LuFtKrabbe/shelter/tree/shelter-part3/shelter',
   picture: imageShelter,
   description: `A simple two-page website with cute pets. Adaptive and responsive layout for mobile and desktop devices.`,
   descriptionExpand: `The shelter's page with its pets and information about them. This is more complex project than the 
@@ -52,7 +57,8 @@ export const projectsShelter: ProjectsData = {
 export const projectsKeyboard: ProjectsData = {
   name: 'Virtual Keyboard',
   type: 'Functional application',
-  link: 'https://luftkrabbe.github.io/virtual-keyboard/src/index.html',
+  linkDeploy: 'https://luftkrabbe.github.io/virtual-keyboard/src/index.html',
+  linkRepo: 'https://github.com/LuFtKrabbe/virtual-keyboard/tree/development',
   picture: imageKeyboard,
   description: `Virtual Keyboard with Russian and English layout, nice design and animated keys.`,
   descriptionExpand: `Virtual Keyboard with animated keystrokes and layout in Russian and English. The printed text corresponds 
@@ -63,7 +69,8 @@ export const projectsKeyboard: ProjectsData = {
 export const projectsMinesweeper: ProjectsData = {
   name: 'Minesweeper',
   type: 'Game application',
-  link: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/minesweeper/',
+  linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/minesweeper/',
+  linkRepo: 'https://github.com/LuFtKrabbe/minesweeper/tree/minesweeper/minesweeper',
   picture: imageMinesweeper,
   description: `The project is executed using vanilla JavaScript. Set up the game and play with Light or Dark theme.`,
   descriptionExpand: `The version of the original application with full functionality: choose the size of the field, set 
@@ -74,7 +81,8 @@ export const projectsMinesweeper: ProjectsData = {
 export const projectsNewsletter: ProjectsData = {
   name: 'Newsletter',
   type: 'News application',
-  link: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/migration-newip-to-ts/',
+  linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/migration-newip-to-ts/',
+  linkRepo: 'https://github.com/LuFtKrabbe/newsletter/tree/migration-newip-to-ts/migration-newip-to-ts',
   picture: imageNewsletter,
   description: `A simple HTTP REST API for searching and retrieving news from all over the internet.`,
   descriptionExpand: `A simple HTTP REST API for searching and retrieving news from all over the internet. The project 
@@ -84,7 +92,8 @@ export const projectsNewsletter: ProjectsData = {
 export const projectsSelectors: ProjectsData = {
   name: 'CSS Selectors',
   type: 'Game and study application',
-  link: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/rss-css-selectors/',
+  linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/rss-css-selectors/',
+  linkRepo: 'https://github.com/LuFtKrabbe/css-selectors/tree/rss-css-selectors/rss-css-selectors',
   picture: imageSelectors,
   description: `The project is executed using TypeScript and ES6+ features. Learn the CSS selectors in playing form.`,
   descriptionExpand: `A simulator for learning css selectors, which contains 10 game levels. For the user comfort, the 
@@ -93,24 +102,37 @@ export const projectsSelectors: ProjectsData = {
 };
 
 export const projectsAsyncRace: ProjectsData = {
-  name: 'Asynchronous race',
+  name: 'Asynchronous Race',
   type: 'Game SPA',
-  link: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/async-race/',
+  linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/async-race/',
+  linkRepo: 'https://github.com/LuFtKrabbe/async-race/tree/async-race/async-race',
   picture: imageRace,
   description: `The SPA is executed using REST architecture with local server interaction.`,
-  descriptionExpand: `Add or change cars, run each one individually or arrange a race. Keep track of their movement and 
-  condition on the track and view progress in the high score table. All actions take place in communication with 
-  the local server.`,
+  descriptionExpand: `All actions take place in communication with the local server! Add or change cars, run each one 
+  individually or arrange a race. Keep track of their movement and condition on the track and view progress in the high 
+  score table. `,
 };
 
 export const projectsCommerce: ProjectsData = {
   name: 'Blocks&Beams',
   type: 'E-commerce SPA',
-  link: 'https://blocks-n-beams.netlify.app/main',
+  linkDeploy: 'https://blocks-n-beams.netlify.app/main',
+  linkRepo: 'https://github.com/LuFtKrabbe/blocks-n-beams',
   picture: imageCommerce,
   description: `Team work project is executed by 3 members. Project is created using React with functional components, 
   Ant design component library, Redux and Jest for testing. Store is ready for sales!`,
-  descriptionExpand: `Team work project is executed by 3 members. Project is created using React with functional components, 
-  Ant design component library, Redux and Jest for testing. Store is ready for sales using commercetools as a backend. Trial 
-  period of the project has already expired.`,
+  descriptionExpand: `Trial period of the project has already expired! Team work project is executed by 3 members. 
+  Project is created using React with functional components, Ant design component library, Redux and Jest for testing. 
+  Store is ready for sales using commercetools as a backend.`,
+};
+
+export const projectsImperialDB: ProjectsData = {
+  name: 'Imperial Database',
+  type: 'Fun SPA',
+  linkDeploy: 'https://imperial-db.netlify.app',
+  linkRepo: 'https://github.com/LuFtKrabbe/react-learn/tree/react-tests-context',
+  picture: imageImperial,
+  description: `The project for practicing react skills: class and functional components and routing with Redux and Jest testing.`,
+  descriptionExpand: `A simple REST API for searching planets from Star Wars Universe. Use pagnation elements to display data and 
+  see detailed information about any planet.`,
 };

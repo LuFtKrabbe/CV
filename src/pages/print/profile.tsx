@@ -6,7 +6,7 @@ import imageMe from '../../assets/me.png';
 import ContactsBlock from '../../modules/contacts/contacts';
 import { contacts } from '../../modules/contacts/contactsData';
 import CoursesBlock from '../../modules/courses/courses';
-import { coursesPreFrontEnd, coursesFrontEnd } from '../../modules/courses/coursesData';
+import { coursesFrontEnd, coursesAWS, coursesReact } from '../../modules/courses/coursesData';
 import { universityFirst, universitySecond } from '../../modules/education/eduData';
 import EduBlock from '../../modules/education/education';
 import { langFirst, langSecond } from '../../modules/language/langData';
@@ -14,10 +14,9 @@ import LangBlock from '../../modules/language/language';
 import ProjectsBlock from '../../modules/projects/projects';
 import {
   projectsCommerce,
-  projectsKeyboard,
   projectsMinesweeper,
   projectsSelectors,
-  projectsAsyncRace,
+  projectsImperialDB,
 } from '../../modules/projects/projectsData';
 import SkillsBlock from '../../modules/skills/skills';
 import { skills } from '../../modules/skills/skillsData';
@@ -47,7 +46,7 @@ const Profile: FC = (): JSX.Element => {
           <div className="profile-main">
             <div className="main-header">
               <div className="header-name">Alexander Filimonov</div>
-              <div className="header-profession">Frontend-developer</div>
+              <div className="header-profession">Junior frontend-developer</div>
               <div className="header-links">
                 <NavLink to="https://vk.com/luftkrabbe" className="header-vk">
                   VK
@@ -66,40 +65,38 @@ const Profile: FC = (): JSX.Element => {
             <div className="main-about">
               <div className="about-header">ABOUT ME</div>
               <div className="about-text">
-                <div>Looking for a job as a Junior frontend-developer.</div>
                 <div>
-                  Well trained and ready to work specialist. I have a good technical education and an analytical mind
-                  which help me to handle with assigned tasks. I can work well with the documentation and clearly follow
-                  the requirements that are defined in the technical specifications.
+                  I'm well-trained and ready-to-work specialist with a solid technical education and an analytical mind
+                  that helps me to handle with assigned tasks. I work well with the documentation and clearly follow the
+                  requirements outlined in the technical specifications.
                 </div>
                 <div>
-                  I love to create projects from scratch developing an idea and also pay attention to the details for
-                  users comfort and their good interaction with product.
+                  I love to create projects from scratch developing an idea and paying attention to the details for user
+                  comfort and good product interaction.
                 </div>
                 <div>
-                  I really proud of the final project where I could show myself as a team leader. My main
-                  responsibilities were to plan and control work progress according to the agile Scrum metodology, make
-                  code reviews and finally approve and merge pull requests. As a result our team made a real project
-                  using Commercetools - cloud-based headless commerce platform.
+                  I'm proud of the final project where I proved myself as a team leader. My main responsibilities
+                  included planning and monitoring the work progress according to the agile Scrum metodology, reviewing
+                  the code and finally approving and merging pull requests. As a result, our team implemented a
+                  real-life project using Commercetools - cloud-based headless commerce platform.
                 </div>
-                <div>You can see all of my projects in my portfolio.</div>
               </div>
             </div>
             <div className="main-projects">
               <div className="projects-header">PROJECTS</div>
               <div className="projects-container">
+                {ProjectsBlock(projectsImperialDB)}
                 {ProjectsBlock(projectsCommerce)}
-                {ProjectsBlock(projectsAsyncRace)}
                 {ProjectsBlock(projectsSelectors)}
                 {ProjectsBlock(projectsMinesweeper)}
-                {ProjectsBlock(projectsKeyboard)}
               </div>
             </div>
             <div className="main-courses">
               <div className="courses-header">COURSES</div>
               <div className="courses-container">
+                {CoursesBlock(coursesReact)}
+                {CoursesBlock(coursesAWS)}
                 {CoursesBlock(coursesFrontEnd)}
-                {CoursesBlock(coursesPreFrontEnd)}
               </div>
             </div>
             <div className="main-exprerience">

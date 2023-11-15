@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 import { NavLink } from 'react-router-dom';
 
+import imageAwsBadgeCloudPract from '../../assets/certificates/aws-badge-cloud-practitioner.png';
+import imageAwsBadgeWellArch from '../../assets/certificates/aws-badge-well-architect.png';
 import imageEnglishBadge from '../../assets/certificates/english-min.png';
 import CertificatesBlock from '../../modules/certificates/certificates';
 import {
@@ -9,6 +11,7 @@ import {
   certificatesTypeScript,
   certificatesFrontEnd,
   certificatesEnglish,
+  certificatesAWS,
 } from '../../modules/certificates/certificatesData';
 import {
   coursesFrontEnd,
@@ -17,6 +20,7 @@ import {
   coursesCommandLine,
   coursesGit,
   coursesTriada,
+  coursesAWS,
 } from '../../modules/courses/coursesData';
 import JournalsBlock from '../../modules/journals/journals';
 import {
@@ -70,6 +74,9 @@ const Achievements: FC = (): JSX.Element => {
               <div className="achievements-courses-text">
                 <div className="courses-name">Completed courses:</div>
                 <li>
+                  <span>{coursesAWS.organization}:</span> {coursesAWS.name};
+                </li>
+                <li>
                   <span>{coursesFrontEnd.organization}:</span> {coursesFrontEnd.name};
                 </li>
                 <li>
@@ -94,14 +101,22 @@ const Achievements: FC = (): JSX.Element => {
                 <div className="activities-name">English:</div>
                 <div>In reading and listening according to CEFR</div>
                 <img src={imageEnglishBadge} className="activities-english"></img>
+                <div className="activities-name">AWS Badges:</div>
+                <div className="activities-aws">
+                  <img src={imageAwsBadgeWellArch} className="activities-aws-badge"></img>
+                  <img src={imageAwsBadgeCloudPract} className="activities-aws-badge"></img>
+                </div>
               </div>
             </div>
             <div className="achievements-certificate-header">CERTIFICATES</div>
             <div className="achievements-certificate-main">
               {CertificatesBlock(certificatesFrontEndPreschool)}
+              {CertificatesBlock(certificatesFrontEnd)}
+              {CertificatesBlock(certificatesAWS)}
+            </div>
+            <div className="achievements-certificate-main">
               {CertificatesBlock(certificatesTypeScript)}
               {CertificatesBlock(certificatesEnglish)}
-              {CertificatesBlock(certificatesFrontEnd)}
             </div>
           </div>
         </div>
