@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 
 import { langContext } from '../../language/langContext';
-import { Languages } from '../../types/enums';
 
 import { SkillsData, skillsText } from './skillsData';
 

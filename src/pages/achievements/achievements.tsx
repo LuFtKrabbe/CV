@@ -22,6 +22,7 @@ import {
   coursesGit,
   coursesTriada,
   coursesAWS,
+  coursesReact,
 } from '../../modules/courses/coursesData';
 import JournalsBlock from '../../modules/journals/journals';
 import {
@@ -49,20 +50,10 @@ const Achievements: FC = (): JSX.Element => {
             </NavLink>
           </div>
           <div className="achievements-content-main">
-            <div className="achievements-science-header">SCIENCE</div>
+            <div className="achievements-science-header">{achievementsData[language].science.title}</div>
             <div className="achievements-science-text">
-              <div>
-                Since the end of my bachelor degree program my scientific advisor N.A. Senkin and I have been publishing
-                articles dedicated to transportaion systems and overhead power lines. In terms of transport, the
-                articles are related to the design and implementation of a high-speed highway, where I mainly deal with
-                structural calculations. For power lines, issues include reducing accident rates and protecting them
-                from vandals and other adverse factors that can lead to the collapse of a transmission tower or even a
-                number of them.
-              </div>
-              <div>
-                I took part in 12 scientific conferences and as author and co-author I have written 11 articles with
-                publications in VAK and Scopus levels.
-              </div>
+              <div>{achievementsData[language].science.description.par1}</div>
+              <div>{achievementsData[language].science.description.par2}</div>
               <div className="achievements-science-articles">
                 <div className="articles-list">
                   {JournalsBlock(journalsTransportation2019)}
@@ -71,15 +62,18 @@ const Achievements: FC = (): JSX.Element => {
                   {JournalsBlock(journalsFoundation)}
                 </div>
                 <div className="articles-journals">
-                  <img className="articles-image" src={journalsTransportation2019.picture}></img>
-                  <img className="articles-image" src={journalsArchitecture.picture}></img>
+                  <img className="articles-image" src={journalsTransportation2019[language].picture}></img>
+                  <img className="articles-image" src={journalsArchitecture[language].picture}></img>
                 </div>
               </div>
             </div>
-            <div className="achievements-courses-header">COURSES & ACTIVITIES</div>
+            <div className="achievements-courses-header">{achievementsData[language].activities.titles}</div>
             <div className="achievements-courses-container">
               <div className="achievements-courses-text">
-                <div className="courses-name">Completed courses:</div>
+                <div className="courses-name">{achievementsData[language].activities.completed}:</div>
+                <li>
+                  <span>{coursesReact[language].organization}:</span> {coursesReact[language].name};
+                </li>
                 <li>
                   <span>{coursesAWS[language].organization}:</span> {coursesAWS[language].name};
                 </li>
@@ -103,19 +97,19 @@ const Achievements: FC = (): JSX.Element => {
                 </li>
               </div>
               <div className="achievements-activities">
-                <div className="activities-name">Codewars:</div>
+                <div className="activities-name">{achievementsData[language].activities.codewars}:</div>
                 <img src="https://www.codewars.com/users/LuFtKrabbe/badges/large" className="activities-codewars"></img>
-                <div className="activities-name">English:</div>
-                <div>In reading and listening according to CEFR</div>
+                <div className="activities-name">{achievementsData[language].activities.english}:</div>
+                <div>{achievementsData[language].activities.englishDescription}</div>
                 <img src={imageEnglishBadge} className="activities-english"></img>
-                <div className="activities-name">AWS Badges:</div>
+                <div className="activities-name">{achievementsData[language].activities.awsBadges}:</div>
                 <div className="activities-aws">
                   <img src={imageAwsBadgeWellArch} className="activities-aws-badge"></img>
                   <img src={imageAwsBadgeCloudPract} className="activities-aws-badge"></img>
                 </div>
               </div>
             </div>
-            <div className="achievements-certificate-header">CERTIFICATES</div>
+            <div className="achievements-certificate-header">{achievementsData[language].titles.certificates}</div>
             <div className="achievements-certificate-main">
               {CertificatesBlock(certificatesFrontEndPreschool)}
               {CertificatesBlock(certificatesFrontEnd)}

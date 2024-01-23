@@ -4,32 +4,64 @@ import imageFrontEndPreSchool from '../../assets/certificates/js-fe-preschool.pn
 import imageFrontEnd from '../../assets/certificates/js-fe.png';
 import imageTypeScript from '../../assets/certificates/ms-typescript.png';
 
+import { Languages } from '../../types/enums';
+
 export type CertificatesData = {
   name: string;
   picture: string;
 };
 
-export const certificatesFrontEndPreschool: CertificatesData = {
-  name: 'JavaScript/Front-end (Pre-School)',
-  picture: imageFrontEndPreSchool,
+export const certificatesFrontEndPreschool: Record<Languages, CertificatesData> = {
+  [Languages.RU]: {
+    name: 'JavaScript/Front-end (Pre-School)',
+    picture: imageFrontEndPreSchool,
+  },
+  [Languages.EN]: {
+    name: 'JavaScript/Front-end (Pre-School)',
+    picture: imageFrontEndPreSchool,
+  },
 };
 
-export const certificatesTypeScript: CertificatesData = {
-  name: 'Build JavaScript applications using TypeScript',
-  picture: imageTypeScript,
+export const certificatesTypeScript: Record<Languages, CertificatesData> = {
+  [Languages.RU]: {
+    name: 'Построение JavaScript приложений с TypeScript',
+    picture: imageTypeScript,
+  },
+  [Languages.EN]: {
+    name: 'Build JavaScript applications using TypeScript',
+    picture: imageTypeScript,
+  },
 };
 
-export const certificatesFrontEnd: CertificatesData = {
-  name: 'JavaScript/Front-end',
-  picture: imageFrontEnd,
+export const certificatesFrontEnd: Record<Languages, CertificatesData> = {
+  [Languages.RU]: {
+    name: 'JavaScript/Front-end',
+    picture: imageFrontEnd,
+  },
+  [Languages.EN]: {
+    name: 'JavaScript/Front-end',
+    picture: imageFrontEnd,
+  },
 };
 
-export const certificatesEnglish: CertificatesData = {
-  name: 'English level on the EF SET score scale according to CEFR',
-  picture: imageEnglish,
+export const certificatesEnglish: Record<Languages, CertificatesData> = {
+  [Languages.RU]: {
+    name: 'Уровень английского EF SET в соответствии с CEFR',
+    picture: imageEnglish,
+  },
+  [Languages.EN]: {
+    name: 'English level on the EF SET score scale according to CEFR',
+    picture: imageEnglish,
+  },
 };
 
-export const certificatesAWS: CertificatesData = {
-  name: 'AWS Fundamentals',
-  picture: imageAWS,
+export const certificatesAWS: Record<Languages, CertificatesData> = {
+  [Languages.RU]: {
+    name: 'AWS Основы',
+    picture: imageAWS,
+  },
+  [Languages.EN]: {
+    name: 'AWS Fundamentals',
+    picture: imageAWS,
+  },
 };
