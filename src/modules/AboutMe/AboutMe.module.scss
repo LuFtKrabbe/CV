@@ -1,0 +1,36 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.about {
+  & .text {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 14px;
+  }
+}
+
+.about,
+.projects,
+.exprerience,
+.courses,
+.education {
+  width: 95%;
+  margin: 10px 0 0 0;
+}
+
+.title {
+  font-size: 1.4rem;
+  border-bottom: solid 1px $color-main-divider;
+}
+
+.container {
+  margin: 10px 0 0 0;
+}
+
+.education {
+  height: 20%;
+  & .title {
+    margin: 0 0 15px 0;
+  }
+}

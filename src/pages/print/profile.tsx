@@ -1,26 +1,14 @@
 import { FC } from 'react';
 
 import imageMe from '../../assets/me.png';
+import AboutMe from '../../modules/AboutMe/AboutMe';
 import Header from '../../modules/Header/Header';
 import ContactsBlock from '../../modules/contacts/contacts';
 import { contacts } from '../../modules/contacts/contactsData';
-import CoursesBlock from '../../modules/courses/courses';
-import { coursesFrontEnd, coursesAWS, coursesReact } from '../../modules/courses/coursesData';
-import { universityFirst, universitySecond } from '../../modules/education/eduData';
-import EduBlock from '../../modules/education/education';
 import { langFirst, langSecond } from '../../modules/language/langData';
 import LangBlock from '../../modules/language/language';
-import ProjectsBlock from '../../modules/projects/projects';
-import {
-  projectsCommerce,
-  projectsMinesweeper,
-  projectsSelectors,
-  projectsImperialDB,
-} from '../../modules/projects/projectsData';
 import SkillsBlock from '../../modules/skills/skills';
 import { skills } from '../../modules/skills/skillsData';
-import WorkBlock from '../../modules/work/work';
-import { workFirst } from '../../modules/work/workData';
 
 const Profile: FC = (): JSX.Element => {
   return (
@@ -44,54 +32,7 @@ const Profile: FC = (): JSX.Element => {
           </div>
           <div className="profile-main">
             <Header />
-            <div className="main-about">
-              <div className="about-header">ABOUT ME</div>
-              <div className="about-text">
-                <div>
-                  I'm well-trained and ready-to-work specialist with a solid technical education and an analytical mind
-                  that helps me to handle with assigned tasks. I work well with the documentation and clearly follow the
-                  requirements outlined in the technical specifications.
-                </div>
-                <div>
-                  I love to create projects from scratch developing an idea and paying attention to the details for user
-                  comfort and good product interaction.
-                </div>
-                <div>
-                  I'm proud of the final project where I proved myself as a team leader. My main responsibilities
-                  included planning and monitoring the work progress according to the agile Scrum metodology, reviewing
-                  the code and finally approving and merging pull requests. As a result, our team implemented a
-                  real-life project using Commercetools - cloud-based headless commerce platform.
-                </div>
-              </div>
-            </div>
-            <div className="main-projects">
-              <div className="projects-header">PROJECTS</div>
-              <div className="projects-container">
-                {ProjectsBlock(projectsImperialDB)}
-                {ProjectsBlock(projectsCommerce)}
-                {ProjectsBlock(projectsSelectors)}
-                {ProjectsBlock(projectsMinesweeper)}
-              </div>
-            </div>
-            <div className="main-courses">
-              <div className="courses-header">COURSES</div>
-              <div className="courses-container">
-                {CoursesBlock(coursesReact)}
-                {CoursesBlock(coursesAWS)}
-                {CoursesBlock(coursesFrontEnd)}
-              </div>
-            </div>
-            <div className="main-exprerience">
-              <div className="exprerience-header">WORK EXPERIENCE</div>
-              <div className="exprerience-container">{WorkBlock(workFirst)}</div>
-            </div>
-            <div className="main-education">
-              <div className="education-header">EDUCATION</div>
-              <div className="education-container">
-                {EduBlock(universitySecond)}
-                {EduBlock(universityFirst)}
-              </div>
-            </div>
+            <AboutMe />
           </div>
         </div>
       </div>
