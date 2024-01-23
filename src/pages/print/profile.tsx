@@ -1,10 +1,7 @@
-import { FC, useContext } from 'react';
-
-import { NavLink } from 'react-router-dom';
+import { FC } from 'react';
 
 import imageMe from '../../assets/me.png';
-import LangSwitcher from '../../language/LangSwitcher/LangSwitcher';
-import { langContext } from '../../language/langContext';
+import Header from '../../modules/Header/Header';
 import ContactsBlock from '../../modules/contacts/contacts';
 import { contacts } from '../../modules/contacts/contactsData';
 import CoursesBlock from '../../modules/courses/courses';
@@ -25,15 +22,7 @@ import { skills } from '../../modules/skills/skillsData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
 
-import { Languages } from '../../types/enums';
-
-import { profileText } from './profileText';
-
 const Profile: FC = (): JSX.Element => {
-  const {
-    state: { language },
-  }: { state: { language: Languages.RU | Languages.EN } } = useContext(langContext);
-
   return (
     <div className="profile-wrapper">
       <div className="profile-format">
@@ -54,27 +43,7 @@ const Profile: FC = (): JSX.Element => {
             </div>
           </div>
           <div className="profile-main">
-            <div className="main-header">
-              <div className="header-name">{profileText[language].name}</div>
-              <div className="header-profession">{profileText[language].profession}</div>
-              <div className="header-switcher">
-                <LangSwitcher />
-              </div>
-              <div className="header-links">
-                <NavLink to="https://vk.com/luftkrabbe" className="header-vk">
-                  VK
-                </NavLink>
-                <NavLink to="https://github.com/LuFtKrabbe" className="header-github">
-                  Github
-                </NavLink>
-                <NavLink to="/portfolio" className="header-portfolio">
-                  Portfolio
-                </NavLink>
-                <NavLink to="/achievements" className="header-achievements">
-                  Achievements
-                </NavLink>
-              </div>
-            </div>
+            <Header />
             <div className="main-about">
               <div className="about-header">ABOUT ME</div>
               <div className="about-text">
