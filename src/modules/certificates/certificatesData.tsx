@@ -3,6 +3,7 @@ import imageEnglish from '../../assets/certificates/english.png';
 import imageFrontEndPreSchool from '../../assets/certificates/js-fe-preschool.png';
 import imageFrontEnd from '../../assets/certificates/js-fe.png';
 import imageTypeScript from '../../assets/certificates/ms-typescript.png';
+import imageReact from '../../assets/certificates/react.png';
 
 import { Languages } from '../../types/enums';
 
@@ -63,5 +64,16 @@ export const certificatesAWS: Record<Languages, CertificatesData> = {
   [Languages.EN]: {
     name: 'AWS Fundamentals',
     picture: imageAWS,
+  },
+};
+
+export const certificatesReact: Record<Languages, CertificatesData> = {
+  [Languages.RU]: {
+    name: 'React',
+    picture: imageReact,
+  },
+  [Languages.EN]: {
+    name: 'React',
+    picture: imageReact,
   },
 };

@@ -13,6 +13,7 @@ import {
   certificatesFrontEnd,
   certificatesEnglish,
   certificatesAWS,
+  certificatesReact,
 } from '../../modules/certificates/certificatesData';
 import {
   coursesFrontEnd,
@@ -111,12 +112,13 @@ const Achievements: FC = (): JSX.Element => {
             </div>
             <div className="achievements-certificate-header">{achievementsData[language].titles.certificates}</div>
             <div className="achievements-certificate-main">
-              {CertificatesBlock(certificatesFrontEndPreschool)}
+              {CertificatesBlock(certificatesReact)}
               {CertificatesBlock(certificatesFrontEnd)}
               {CertificatesBlock(certificatesAWS)}
             </div>
             <div className="achievements-certificate-main">
               {CertificatesBlock(certificatesTypeScript)}
+              {CertificatesBlock(certificatesFrontEndPreschool)}
               {CertificatesBlock(certificatesEnglish)}
             </div>
           </div>
