@@ -37,7 +37,7 @@ export const projectsMomentum: ProjectsData = {
   linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFEPRESCHOOL2022Q4/momentum/',
   linkRepo: 'https://github.com/LuFtKrabbe/momentum/tree/momentum/momentum',
   picture: imageMomentum,
-  description: `A landing page that sales plants and care services. Adaptive and responsive layout for mobile and desktop devices.`,
+  description: `The app shows the time and greets the user. Request the weather in the region, read a quote and listen to music!`,
   descriptionExpand: `The app shows the time and greets the user, who can also choose a suitable background from the image
   service, request the weather in the region, read a quote and listen to music. The displayed modules are configurable and 
   can be hidden. Available in Russian and English.`,
@@ -128,7 +128,7 @@ export const projectsCommerce: ProjectsData = {
 
 export const projectsImperialDB: ProjectsData = {
   name: 'Imperial Database',
-  type: 'Fun SPA',
+  type: 'SPA for SW fans',
   linkDeploy: 'https://imperial-db.netlify.app',
   linkRepo: 'https://github.com/LuFtKrabbe/react-learn/tree/react-tests-context',
   picture: imageImperial,

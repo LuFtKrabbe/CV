@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.btnSwitcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  height: 24px;
+  width: 36px;
+  border: solid 1px $color-column;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-main-button;
+    transition: all 300ms ease;
+  }
+}

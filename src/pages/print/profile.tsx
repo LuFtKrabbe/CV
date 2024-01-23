@@ -1,8 +1,10 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 
 import { NavLink } from 'react-router-dom';
 
 import imageMe from '../../assets/me.png';
+import LangSwitcher from '../../language/LangSwitcher/LangSwitcher';
+import { langContext } from '../../language/langContext';
 import ContactsBlock from '../../modules/contacts/contacts';
 import { contacts } from '../../modules/contacts/contactsData';
 import CoursesBlock from '../../modules/courses/courses';
@@ -23,7 +25,15 @@ import { skills } from '../../modules/skills/skillsData';
 import WorkBlock from '../../modules/work/work';
 import { workFirst } from '../../modules/work/workData';
 
+import { Languages } from '../../types/enums';
+
+import { profileText } from './profileText';
+
 const Profile: FC = (): JSX.Element => {
+  const {
+    state: { language },
+  }: { state: { language: Languages.RU | Languages.EN } } = useContext(langContext);
+
   return (
     <div className="profile-wrapper">
       <div className="profile-format">
@@ -45,8 +55,11 @@ const Profile: FC = (): JSX.Element => {
           </div>
           <div className="profile-main">
             <div className="main-header">
-              <div className="header-name">Alexander Filimonov</div>
-              <div className="header-profession">Junior frontend-developer</div>
+              <div className="header-name">{profileText[language].name}</div>
+              <div className="header-profession">{profileText[language].profession}</div>
+              <div className="header-switcher">
+                <LangSwitcher />
+              </div>
               <div className="header-links">
                 <NavLink to="https://vk.com/luftkrabbe" className="header-vk">
                   VK

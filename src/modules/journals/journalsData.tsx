@@ -22,7 +22,7 @@ export const journalsTransportation2021: JournalsData = {
 
 export const journalsArchitecture: JournalsData = {
   name: 'Contemporary problems of architecture and construction',
-  article: 'Application of prestressing in higway overpass structures',
+  article: 'Application of prestressing in highway overpass structures',
   picture: imageArchitecture,
 };
 
