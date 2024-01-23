@@ -1,6 +1,8 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 
 import { NavLink } from 'react-router-dom';
+
+import { langContext } from '../../language/langContext';
 
 import {
   projectsAsyncRace,
@@ -15,15 +17,21 @@ import {
 } from '../../modules/projects/projectsData';
 import ProjectsExpandBlock from '../../modules/projects/projectsExpand';
 
+import { portfolioData } from './portfolioData';
+
 const Portfolio: FC = (): JSX.Element => {
+  const {
+    state: { language },
+  } = useContext(langContext);
+
   return (
     <div className="portfolio-wrapper">
       <div className="portfolio-format">
         <div className="portfolio-content">
           <div className="portfolio-content-header">
-            <div className="header-name">Portfolio</div>
+            <div className="header-name">{portfolioData[language].title}</div>
             <NavLink to="/profile" className="header-back">
-              ← Back
+              {portfolioData[language].back}
             </NavLink>
           </div>
           <div className="portfolio-content-main">
