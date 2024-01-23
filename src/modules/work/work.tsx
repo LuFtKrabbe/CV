@@ -1,18 +1,27 @@
+import { useContext } from 'react';
+
+import { langContext } from '../../language/langContext';
+import { Languages } from '../../types/enums';
+
 import { WorkData } from './workData';
 
-const WorkBlock = (work: WorkData): JSX.Element => {
+const WorkBlock = (work: Record<Languages, WorkData>): JSX.Element => {
+  const {
+    state: { language },
+  }: { state: { language: Languages } } = useContext(langContext);
+
   return (
     <div className="work-block">
       <div className="work-name-city-years">
-        <div className="work-name">{work.name}</div>
-        <div className="work-city">{work.city}</div>
+        <div className="work-name">{work[language].name}</div>
+        <div className="work-city">{work[language].city}</div>
         <div className="work-years">
-          {work.yearStart}-{work.yearFinish}
+          {work[language].yearStart}-{work[language].yearFinish}
         </div>
       </div>
       <div className="work-degree-text">
-        <div className="work-degree">{work.position}</div>
-        <div className="work-text">{work.description}</div>
+        <div className="work-degree">{work[language].position}</div>
+        <div className="work-text">{work[language].description}</div>
       </div>
     </div>
   );

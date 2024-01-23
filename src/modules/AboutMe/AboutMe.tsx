@@ -4,11 +4,11 @@ import { langContext } from '../../language/langContext';
 import { Languages } from '../../types/enums';
 
 import CoursesBlock from '../courses/courses';
-import { coursesAWS, coursesFrontEnd, coursesReact } from '../courses/coursesData';
+import { coursesAWS, coursesFrontEnd, coursesNode, coursesReact } from '../courses/coursesData';
 import { universityFirst, universitySecond } from '../education/eduData';
 import EduBlock from '../education/education';
 import ProjectsBlock from '../projects/projects';
-import { projectsCommerce, projectsImperialDB, projectsMinesweeper, projectsSelectors } from '../projects/projectsData';
+import { projectsCommerce, projectsMinesweeper } from '../projects/projectsData';
 import WorkBlock from '../work/work';
 import { workFirst } from '../work/workData';
 
@@ -33,15 +33,14 @@ const AboutMe: FC = (): JSX.Element => {
       <div className={styles.projects}>
         <div className={styles.title}>{aboutMeText[language].titles.projects}</div>
         <div className={styles.container}>
-          {ProjectsBlock(projectsImperialDB)}
           {ProjectsBlock(projectsCommerce)}
-          {ProjectsBlock(projectsSelectors)}
           {ProjectsBlock(projectsMinesweeper)}
         </div>
       </div>
       <div className={styles.courses}>
         <div className={styles.title}>{aboutMeText[language].titles.courses}</div>
         <div className={styles.container}>
+          {CoursesBlock(coursesNode)}
           {CoursesBlock(coursesReact)}
           {CoursesBlock(coursesAWS)}
           {CoursesBlock(coursesFrontEnd)}

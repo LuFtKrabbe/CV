@@ -13,7 +13,7 @@ export const aboutMeText = {
     работы стал проект, использующий облачную площадку Commercetools для продажи товаров.`,
     titles: {
       about: 'О СЕБЕ',
-      projects: 'ПРОЕКТЫ',
+      projects: 'ПРОЕКТЫ (ТОП-3)',
       courses: 'КУРСЫ',
       work: 'ОПЫТ РАБОТЫ',
       education: 'ОБРАЗОВАНИЕ',
@@ -31,7 +31,7 @@ export const aboutMeText = {
     real-life project using Commercetools - cloud-based headless commerce platform.`,
     titles: {
       about: 'ABOUT ME',
-      projects: 'PROJECTS',
+      projects: 'PROJECTS (TOP-3)',
       courses: 'COURSES',
       work: 'WORK EXPERIENCE',
       education: 'EDUCATION',

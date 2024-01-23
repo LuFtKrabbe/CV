@@ -1,10 +1,11 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 
 import { NavLink } from 'react-router-dom';
 
 import imageAwsBadgeCloudPract from '../../assets/certificates/aws-badge-cloud-practitioner.png';
 import imageAwsBadgeWellArch from '../../assets/certificates/aws-badge-well-architect.png';
 import imageEnglishBadge from '../../assets/certificates/english-min.png';
+import { langContext } from '../../language/langContext';
 import CertificatesBlock from '../../modules/certificates/certificates';
 import {
   certificatesFrontEndPreschool,
@@ -29,8 +30,13 @@ import {
   journalsTransportation2019,
   journalsTransportation2021,
 } from '../../modules/journals/journalsData';
+import { Languages } from '../../types/enums';
 
 const Achievements: FC = (): JSX.Element => {
+  const {
+    state: { language },
+  }: { state: { language: Languages } } = useContext(langContext);
+
   return (
     <div className="achievements-wrapper">
       <div className="achievements-format">
@@ -74,25 +80,25 @@ const Achievements: FC = (): JSX.Element => {
               <div className="achievements-courses-text">
                 <div className="courses-name">Completed courses:</div>
                 <li>
-                  <span>{coursesAWS.organization}:</span> {coursesAWS.name};
+                  <span>{coursesAWS[language].organization}:</span> {coursesAWS[language].name};
                 </li>
                 <li>
-                  <span>{coursesFrontEnd.organization}:</span> {coursesFrontEnd.name};
+                  <span>{coursesFrontEnd[language].organization}:</span> {coursesFrontEnd[language].name};
                 </li>
                 <li>
-                  <span>{coursesTypeScript.organization}:</span> {coursesTypeScript.name};
+                  <span>{coursesTypeScript[language].organization}:</span> {coursesTypeScript[language].name};
                 </li>
                 <li>
-                  <span>{coursesPreFrontEnd.organization}:</span> {coursesPreFrontEnd.name};
+                  <span>{coursesPreFrontEnd[language].organization}:</span> {coursesPreFrontEnd[language].name};
                 </li>
                 <li>
-                  <span>{coursesCommandLine.organization}:</span> {coursesCommandLine.name};
+                  <span>{coursesCommandLine[language].organization}:</span> {coursesCommandLine[language].name};
                 </li>
                 <li>
-                  <span>{coursesGit.organization}:</span> {coursesGit.name}.
+                  <span>{coursesGit[language].organization}:</span> {coursesGit[language].name}.
                 </li>
                 <li>
-                  <span>{coursesTriada.organization}:</span> {coursesTriada.name}.
+                  <span>{coursesTriada[language].organization}:</span> {coursesTriada[language].name}.
                 </li>
               </div>
               <div className="achievements-activities">
