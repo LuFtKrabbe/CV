@@ -1,15 +1,45 @@
+import { Languages } from '../../types/enums';
+
 export type SkillsData = {
-  main: string[];
+  technologies: string[];
   libraries: string[];
   basics: string[];
   programs: string[];
-  os: string[];
+  systems: string[];
 };
 
 export const skills: SkillsData = {
-  main: ['HTML5', 'CSS3', 'SASS', 'JavaScript', 'TypeScript', 'ESLint', 'Webpack', 'Vite', 'Git & GitHub', 'VSCode'],
+  technologies: [
+    'HTML5',
+    'CSS3',
+    'SASS',
+    'JavaScript',
+    'TypeScript',
+    'ESLint',
+    'Webpack',
+    'Vite',
+    'Git & GitHub',
+    'VSCode',
+  ],
   libraries: ['React', 'Ant Design'],
   basics: ['Node.js', 'Jest', 'BEM'],
   programs: ['Figma', 'Postman', 'Jira', 'AutoCAD', 'Paint.NET'],
-  os: ['Windows', 'Linux: Ubuntu'],
+  systems: ['Windows', 'Linux: Ubuntu'],
+};
+
+export const skillsText = {
+  [Languages.RU]: {
+    technologies: 'Технологии',
+    libraries: 'Библиотеки',
+    basics: 'Основы',
+    programs: 'Программы',
+    systems: 'ОС',
+  },
+  [Languages.EN]: {
+    technologies: 'Technologies',
+    libraries: 'Libraries',
+    basics: 'Basics',
+    programs: 'Programs',
+    systems: 'OS',
+  },
 };

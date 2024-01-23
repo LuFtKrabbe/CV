@@ -1,12 +1,21 @@
-import { SkillsData } from './skillsData';
+import { useContext } from 'react';
+
+import { langContext } from '../../language/langContext';
+import { Languages } from '../../types/enums';
+
+import { SkillsData, skillsText } from './skillsData';
 
 const SkillsBlock = (skills: SkillsData): JSX.Element => {
+  const {
+    state: { language },
+  }: { state: { language: Languages } } = useContext(langContext);
+
   return (
     <>
       <div className="skills-tag">
-        <div className="tag-header">Technologies:</div>
+        <div className="tag-header">{skillsText[language].technologies}</div>
         <div className="tag-container">
-          {skills.main.map((skill, i) => (
+          {skills.technologies.map((skill, i) => (
             <div className="tag-list" key={i}>
               {skill}
             </div>
@@ -14,7 +23,7 @@ const SkillsBlock = (skills: SkillsData): JSX.Element => {
         </div>
       </div>
       <div className="skills-tag">
-        <div className="tag-header">Libraries:</div>
+        <div className="tag-header">{skillsText[language].libraries}</div>
         <div className="tag-container">
           {skills.libraries.map((skill, i) => (
             <div className="tag-list" key={i}>
@@ -24,7 +33,7 @@ const SkillsBlock = (skills: SkillsData): JSX.Element => {
         </div>
       </div>
       <div className="skills-tag">
-        <div className="tag-header">Basics:</div>
+        <div className="tag-header">{skillsText[language].basics}</div>
         <div className="tag-container">
           {skills.basics.map((skill, i) => (
             <div className="tag-list" key={i}>
@@ -34,7 +43,7 @@ const SkillsBlock = (skills: SkillsData): JSX.Element => {
         </div>
       </div>
       <div className="skills-tag">
-        <div className="tag-header">Programs:</div>
+        <div className="tag-header">{skillsText[language].programs}</div>
         <div className="tag-container">
           {skills.programs.map((skill, i) => (
             <div className="tag-list" key={i}>
@@ -44,9 +53,9 @@ const SkillsBlock = (skills: SkillsData): JSX.Element => {
         </div>
       </div>
       <div className="skills-tag">
-        <div className="tag-header">OS:</div>
+        <div className="tag-header">{skillsText[language].systems}</div>
         <div className="tag-container">
-          {skills.os.map((skill, i) => (
+          {skills.systems.map((skill, i) => (
             <div className="tag-list" key={i}>
               {skill}
             </div>

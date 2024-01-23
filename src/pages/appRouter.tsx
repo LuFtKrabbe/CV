@@ -4,7 +4,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Achievements from './achievements/achievements';
 import NotFound from './not_found/notFound';
 import Portfolio from './portfolio/portfolio';
-import Profile from './print/profile';
+import Profile from './profile/profile';
 
 const AppRouter: FC = (): JSX.Element => {
   return (
