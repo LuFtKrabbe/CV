@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 
 import { langContext } from '../../language/langContext';
-
 import { Languages } from '../../types/enums';
 
 import { EduData } from './eduData';
@@ -9,7 +8,7 @@ import { EduData } from './eduData';
 const EduBlock = (university: Record<Languages, EduData>): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <div className="edu-block">

@@ -8,7 +8,7 @@ import { ProjectsData } from './projectsData';
 const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <div className="projectsExpand-block">

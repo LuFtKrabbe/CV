@@ -1,6 +1,15 @@
 import { Languages } from '../../types/enums';
 
-export const headerText = {
+export type HeaderData = {
+  name: string;
+  profession: string;
+  links: {
+    portfolio: string;
+    achievements: string;
+  };
+};
+
+export const headerData: Record<Languages, HeaderData> = {
   [Languages.RU]: {
     name: 'Александр Филимонов',
     profession: 'Junior фронтенд-разработчик',

@@ -1,6 +1,13 @@
 import { Languages } from '../../types/enums';
 
-export const columnText = {
+export type ColumnData = {
+  titles: {
+    languages: string;
+    skills: string;
+  };
+};
+
+export const columnData: Record<Languages, ColumnData> = {
   [Languages.RU]: {
     titles: {
       languages: 'ЯЗЫКИ',

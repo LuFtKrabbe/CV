@@ -8,7 +8,7 @@ import { WorkData } from './workData';
 const WorkBlock = (work: Record<Languages, WorkData>): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <div className="work-block">

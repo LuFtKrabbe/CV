@@ -8,7 +8,7 @@ import { CoursesData } from './coursesData';
 const CoursesBlock = (course: Record<Languages, CoursesData>): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <div className="courses-block">

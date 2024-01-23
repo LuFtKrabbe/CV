@@ -14,7 +14,8 @@ export const coursesNode: Record<Languages, CoursesData> = {
     organization: 'RS School',
     dateStart: '01.2024',
     dateFinish: '03.2024',
-    description: 'Основы Node.js, сетевая коммуникация, тестирование, контейнеризация, SQL, PostgreSQL, Docker and JWT.',
+    description:
+      'Основы Node.js, сетевая коммуникация, тестирование, контейнеризация, SQL, PostgreSQL, Docker and JWT.',
   },
   [Languages.EN]: {
     name: 'Node.js (In progress)',

@@ -1,6 +1,19 @@
 import { Languages } from '../../types/enums';
 
-export const aboutMeText = {
+export type AboutMeData = {
+  par1: string;
+  par2: string;
+  par3: string;
+  titles: {
+    about: string;
+    projects: string;
+    courses: string;
+    work: string;
+    education: string;
+  };
+};
+
+export const aboutMeData: Record<Languages, AboutMeData> = {
   [Languages.RU]: {
     par1: `Подготовленный и готовый к работе начинающий специалист. Имею хорошее техническое образование и 
     аналитический склад ума, позволяющий самостоятельно справлятся с поставленными задачами. Хорошо работаю

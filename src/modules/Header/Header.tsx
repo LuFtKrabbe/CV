@@ -6,7 +6,7 @@ import { langContext } from '../../language/langContext';
 import { Languages } from '../../types/enums';
 
 import styles from './Header.module.scss';
-import { headerText } from './headerText';
+import { headerData } from './headerData';
 
 const Header: FC = (): JSX.Element => {
   const {
@@ -15,8 +15,8 @@ const Header: FC = (): JSX.Element => {
 
   return (
     <div className={styles.header}>
-      <div className={styles.name}>{headerText[language].name}</div>
-      <div className={styles.profession}>{headerText[language].profession}</div>
+      <div className={styles.name}>{headerData[language].name}</div>
+      <div className={styles.profession}>{headerData[language].profession}</div>
       <div className={styles.switcher}>
         <LangSwitcher />
       </div>
@@ -28,10 +28,10 @@ const Header: FC = (): JSX.Element => {
           Github
         </NavLink>
         <NavLink to="/portfolio" className={styles.portfolio}>
-          {headerText[language].links.portfolio}
+          {headerData[language].links.portfolio}
         </NavLink>
         <NavLink to="/achievements" className={styles.achievements}>
-          {headerText[language].links.achievements}
+          {headerData[language].links.achievements}
         </NavLink>
       </div>
     </div>

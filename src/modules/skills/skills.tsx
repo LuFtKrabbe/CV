@@ -8,7 +8,7 @@ import { SkillsData, skillsText } from './skillsData';
 const SkillsBlock = (skills: SkillsData): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <>

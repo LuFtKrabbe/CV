@@ -8,7 +8,7 @@ import { LangData } from './langData';
 const LangBlock = (lang: Record<Languages, LangData>): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <div className="lang-block">

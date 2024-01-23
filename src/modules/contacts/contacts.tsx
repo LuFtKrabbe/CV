@@ -8,7 +8,7 @@ import { ContactsData } from './contactsData';
 const ContactsBlock = (contacts: Record<Languages, ContactsData>): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <>

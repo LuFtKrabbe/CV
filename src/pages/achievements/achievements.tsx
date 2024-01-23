@@ -30,21 +30,22 @@ import {
   journalsTransportation2019,
   journalsTransportation2021,
 } from '../../modules/journals/journalsData';
-import { Languages } from '../../types/enums';
+
+import { achievementsData } from './achievementsData';
 
 const Achievements: FC = (): JSX.Element => {
   const {
     state: { language },
-  }: { state: { language: Languages } } = useContext(langContext);
+  } = useContext(langContext);
 
   return (
     <div className="achievements-wrapper">
       <div className="achievements-format">
         <div className="achievements-content">
           <div className="achievements-content-header">
-            <div className="header-name">Achievements</div>
+            <div className="header-name">{achievementsData[language].title}</div>
             <NavLink to="/profile" className="header-back">
-              ← Back
+              {achievementsData[language].back}
             </NavLink>
           </div>
           <div className="achievements-content-main">
