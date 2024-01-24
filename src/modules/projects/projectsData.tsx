@@ -1,13 +1,13 @@
-import imageCommerce from '../../assets/projects/commerce.png';
-import imageGraphiQL from '../../assets/projects/graphiql.png';
-import imageImperial from '../../assets/projects/imperial.png';
-import imageKeyboard from '../../assets/projects/keyboard.png';
-import imageMinesweeper from '../../assets/projects/minesweeper.png';
-import imageMomentum from '../../assets/projects/momentum.png';
-import imageNewsletter from '../../assets/projects/newsletter.png';
-import imagePlants from '../../assets/projects/plants.png';
-import imageRace from '../../assets/projects/race.png';
-import imageSelectors from '../../assets/projects/selectors.png';
+import imageCommerce from '../../assets/projects/commerce.webp';
+import imageGraphiQL from '../../assets/projects/graphiql.webp';
+import imageImperial from '../../assets/projects/imperial.webp';
+import imageKeyboard from '../../assets/projects/keyboard.webp';
+import imageMinesweeper from '../../assets/projects/minesweeper.webp';
+import imageMomentum from '../../assets/projects/momentum.webp';
+import imageNewsletter from '../../assets/projects/newsletter.webp';
+import imagePlants from '../../assets/projects/plants.webp';
+import imageRace from '../../assets/projects/race.webp';
+import imageSelectors from '../../assets/projects/selectors.webp';
 import imageShelter from '../../assets/projects/shelter.webp';
 
 import { Languages } from '../../types/enums';
