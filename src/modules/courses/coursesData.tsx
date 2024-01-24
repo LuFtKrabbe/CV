@@ -70,7 +70,7 @@ export const coursesFrontEnd: Record<Languages, CoursesData> = {
     dateStart: '02.2023',
     dateFinish: '09.2023',
     description:
-      'Продвинутый уровень Javascript, сеть и безопасность, тестирование, паттерны проектирования, методология гибкой разработки, принципы разработки и инструменты.',
+      'Продвинутый уровень JavaScript, сеть и безопасность, тестирование, Agile, паттерны и принципы разработки.',
   },
   [Languages.EN]: {
     name: 'JavaScript/Front-end',
@@ -78,7 +78,7 @@ export const coursesFrontEnd: Record<Languages, CoursesData> = {
     dateStart: '02.2023',
     dateFinish: '09.2023',
     description:
-      'Advanced Javascript, Networking & Security, Testing, Agile, Patterns, Principles and Tools for development.',
+      'Advanced JavaScript, Networking & Security, Testing, Agile, Patterns, Principles and Tools for development.',
   },
 };
 

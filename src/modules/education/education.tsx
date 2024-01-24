@@ -19,7 +19,7 @@ const EduBlock = (university: Record<Languages, EduData>): JSX.Element => {
           {university[language].yearStart}-{university[language].yearFinish}
         </div>
       </div>
-      <div className="edu-degree-descrition">
+      <div className="edu-degree-description">
         <div className="edu-degree">
           {university[language].degree}
           {university[language].honor ? <div className="edu-honor">{university[language].honorText}</div> : null}

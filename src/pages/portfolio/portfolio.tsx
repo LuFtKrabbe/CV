@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import { langContext } from '../../language/langContext';
 
 import {
-  projectsAsyncRace,
   projectsCommerce,
+  projectsGraphiQL,
   projectsImperialDB,
   projectsKeyboard,
   projectsMinesweeper,
@@ -35,9 +35,9 @@ const Portfolio: FC = (): JSX.Element => {
             </NavLink>
           </div>
           <div className="portfolio-content-main">
+            {ProjectsExpandBlock(projectsGraphiQL)}
             {ProjectsExpandBlock(projectsImperialDB)}
             {ProjectsExpandBlock(projectsCommerce)}
-            {ProjectsExpandBlock(projectsAsyncRace)}
             {ProjectsExpandBlock(projectsSelectors)}
             {ProjectsExpandBlock(projectsMinesweeper)}
             {ProjectsExpandBlock(projectsKeyboard)}

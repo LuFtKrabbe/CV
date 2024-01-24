@@ -1,4 +1,5 @@
 import imageCommerce from '../../assets/projects/commerce.png';
+import imageGraphiQL from '../../assets/projects/graphiql.png';
 import imageImperial from '../../assets/projects/imperial.png';
 import imageKeyboard from '../../assets/projects/keyboard.png';
 import imageMinesweeper from '../../assets/projects/minesweeper.png';
@@ -149,9 +150,9 @@ export const projectsNewsletter: Record<Languages, ProjectsData> = {
     linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFE2023Q1/migration-newip-to-ts/',
     linkRepo: 'https://github.com/LuFtKrabbe/newsletter/tree/migration-newip-to-ts/migration-newip-to-ts',
     picture: imageNewsletter,
-    description: `A simple HTTP REST API for searching and retrieving news from all over the internet.`,
-    descriptionExpand: `A simple HTTP REST API for searching and retrieving news from all over the internet. The project 
-    with open source code needed to be typed using TypeScript. The application has a modified appearance and adaptive layout.`,
+    description: `Простой обозреватель для поиска и чтения новостей со всего интернета, использующий архитектуру REST.`,
+    descriptionExpand: `Простой обозреватель для поиска и чтения новостей со всего интернета, использующий архитектуру REST. Проект 
+    с открытым исходным кодом требовал типизации с помощью TypeScript, а также стилизации интерфейса, включая адаптивную вёрстку.`,
   },
   [Languages.EN]: {
     name: 'Newsletter',
@@ -221,8 +222,8 @@ export const projectsCommerce: Record<Languages, ProjectsData> = {
     linkDeploy: 'https://blocks-n-beams.netlify.app/main',
     linkRepo: 'https://github.com/LuFtKrabbe/blocks-n-beams',
     picture: imageCommerce,
-    description: `Командный проект, выполненный командой из 3 участников. Проект создан на React с функциональными компонетами,
-    библиотекой компонентов Ant design, применением Redux и тестированием на Jest. Магазин готов к продажам!`,
+    description: `Командный проект по продаже строительных материалов, созданный на React с Redux, библиотекой компонентов 
+    Ant design и тестированием на Jest.`,
     descriptionExpand: `Пробный период серверной площадки истёк. Выполненный командой из 3 участников проект, 
     созданный на React с функциональными компонетами, библиотекой Ant design, применением Redux и тестированием на Jest. 
     В качестве сервера использована площадка Commercetools.`,
@@ -233,11 +234,11 @@ export const projectsCommerce: Record<Languages, ProjectsData> = {
     linkDeploy: 'https://blocks-n-beams.netlify.app/main',
     linkRepo: 'https://github.com/LuFtKrabbe/blocks-n-beams',
     picture: imageCommerce,
-    description: `Team work project is executed by 3 members. Project is created using React with functional components, 
-    Ant design component library, Redux and Jest for testing. Store is ready for sales!`,
-    descriptionExpand: `Trial period of the project has already expired! Team work project is executed by 3 members. 
-    Project is created using React with functional components, Ant design component library, Redux and Jest for testing. 
-    Store is ready for sales using commercetools as a backend.`,
+    description: `Team work e-commerce project is created using React with functional components, Ant design component library, 
+    Redux state manager and Jest for testing.`,
+    descriptionExpand: `Trial period of the project has already expired! Team work project is executed by 3 members using React 
+    with functional components, Ant design component library, Redux state manager and Jest for testing. 
+    The store is based on commercetools as a backend.`,
   },
 };
 
@@ -248,9 +249,9 @@ export const projectsImperialDB: Record<Languages, ProjectsData> = {
     linkDeploy: 'https://imperial-db.netlify.app',
     linkRepo: 'https://github.com/LuFtKrabbe/react-learn/tree/react-tests-context',
     picture: imageImperial,
-    description: `React-проект для тренировки навыков и изучения нового. Включает компоненты классов, функциональные компоненты, 
+    description: `React-проект для тренировки навыков и изучения особенностей. Включает компоненты классов, функциональные компоненты, 
     навигацию, использования Redux и тестирование с Jest.`,
-    descriptionExpand: `Простой REST API для поиска планет из вселенной Звёздных войн. Используйте пагинацию для желаемого отображения 
+    descriptionExpand: `Простой REST API для поиска планет из вселенной Звёздных Войн. Используйте пагинацию для желаемого отображения 
     информации и просматривайте детальную информацию о любой планете!`,
   },
   [Languages.EN]: {
@@ -260,7 +261,33 @@ export const projectsImperialDB: Record<Languages, ProjectsData> = {
     linkRepo: 'https://github.com/LuFtKrabbe/react-learn/tree/react-tests-context',
     picture: imageImperial,
     description: `The project for practicing react skills: class and functional components and routing with Redux and Jest testing.`,
-    descriptionExpand: `A simple REST API for searching planets from Star Wars Universe. Use pagnation elements to display data and 
+    descriptionExpand: `A simple REST API for searching planets from Star Wars Universe. Use pagination elements to display data and 
     see detailed information about any planet.`,
+  },
+};
+
+export const projectsGraphiQL: Record<Languages, ProjectsData> = {
+  [Languages.RU]: {
+    name: 'GraphiQL',
+    type: 'Playground SPA',
+    linkDeploy: 'https://graphi-buqlya.netlify.app',
+    linkRepo: 'https://github.com/LuFtKrabbe/GraphiQL',
+    picture: imageGraphiQL,
+    description: `Командный проект по созданию игровой площадкой для выполнения GraphQL запросов к любому заданному 
+    пользователем и доступному GraphQL API.`,
+    descriptionExpand: `Приложение поддерживает любой доступный GraphQL API для создания запросов, включает в себя
+    авторизацию и аутентификацию пользователей. Возможности: подсветка синтаксиса, обозреватель документации, 
+    корректировка запроса, два языка и адаптивный дизайн.`,
+  },
+  [Languages.EN]: {
+    name: 'GraphiQL',
+    type: 'Playground SPA',
+    linkDeploy: 'https://graphi-buqlya.netlify.app',
+    linkRepo: 'https://github.com/LuFtKrabbe/GraphiQL',
+    picture: imageGraphiQL,
+    description: `Team work project is a playground for GraphQL requests which supports any open user-specified GraphQL API.`,
+    descriptionExpand: `This App supports any open user-specified GraphQL API and includes the authorization and 
+    authentication capabilities, ensuring access only for authorized users. Features: syntax highlighting, 
+    documentation explorer, text prettifying for queries, two languages and responsive design.`,
   },
 };

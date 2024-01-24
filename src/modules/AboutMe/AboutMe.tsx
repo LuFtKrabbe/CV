@@ -2,12 +2,13 @@ import { FC, useContext } from 'react';
 
 import { langContext } from '../../language/langContext';
 
+import { Languages } from '../../types/enums';
 import CoursesBlock from '../courses/courses';
 import { coursesAWS, coursesFrontEnd, coursesNode, coursesReact } from '../courses/coursesData';
 import { universityFirst, universitySecond } from '../education/eduData';
 import EduBlock from '../education/education';
 import ProjectsBlock from '../projects/projects';
-import { projectsCommerce, projectsMinesweeper } from '../projects/projectsData';
+import { projectsCommerce, projectsGraphiQL, projectsMinesweeper } from '../projects/projectsData';
 import WorkBlock from '../work/work';
 import { workFirst } from '../work/workData';
 
@@ -24,14 +25,15 @@ const AboutMe: FC = (): JSX.Element => {
       <div className={styles.about}>
         <div className={styles.title}>{aboutMeData[language].titles.about}</div>
         <div className={styles.text}>
-          <div>{aboutMeData[language].par1}</div>
-          <div>{aboutMeData[language].par2}</div>
-          <div>{aboutMeData[language].par3}</div>
+          <div style={language === Languages.RU ? { lineHeight: '1.25rem' } : {}}>{aboutMeData[language].par1}</div>
+          <div style={language === Languages.RU ? { lineHeight: '1.25rem' } : {}}>{aboutMeData[language].par2}</div>
+          <div style={language === Languages.RU ? { lineHeight: '1.25rem' } : {}}>{aboutMeData[language].par3}</div>
         </div>
       </div>
       <div className={styles.projects}>
         <div className={styles.title}>{aboutMeData[language].titles.projects}</div>
         <div className={styles.container}>
+          {ProjectsBlock(projectsGraphiQL)}
           {ProjectsBlock(projectsCommerce)}
           {ProjectsBlock(projectsMinesweeper)}
         </div>
