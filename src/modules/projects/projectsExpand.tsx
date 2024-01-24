@@ -1,7 +1,9 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 import { langContext } from '../../language/langContext';
 import { Languages } from '../../types/enums';
+
+import PopUp from '../PopUp/PopUp';
 
 import { ProjectsData } from './projectsData';
 
@@ -10,10 +12,17 @@ const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): J
     state: { language },
   } = useContext(langContext);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const setIsOpenFalseCb = (arg = false): void => setIsOpen(arg);
+
   return (
     <div className="projectsExpand-block">
       <div className="projectsExpand-imageContainer">
-        <img className="projectsExpand-image" src={projectsExpand[language].picture}></img>
+        <img
+          className="projectsExpand-image"
+          src={projectsExpand[language].picture}
+          onClick={() => setIsOpen(!isOpen)}
+        ></img>
       </div>
       <div className="projectsExpand-container">
         <div className="projectsExpand-name">{projectsExpand[language].name}</div>
@@ -30,6 +39,7 @@ const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): J
         </div>
         <div className="projectsExpand-description">{projectsExpand[language].descriptionExpand}</div>
       </div>
+      {isOpen ? <PopUp imgPath={projectsExpand[language].picture} setIsOpenFalseCb={setIsOpenFalseCb} /> : <div />}
     </div>
   );
 };

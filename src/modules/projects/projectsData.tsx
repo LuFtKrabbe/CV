@@ -8,7 +8,7 @@ import imageNewsletter from '../../assets/projects/newsletter.png';
 import imagePlants from '../../assets/projects/plants.png';
 import imageRace from '../../assets/projects/race.png';
 import imageSelectors from '../../assets/projects/selectors.png';
-import imageShelter from '../../assets/projects/shelter.png';
+import imageShelter from '../../assets/projects/shelter.webp';
 
 import { Languages } from '../../types/enums';
 
