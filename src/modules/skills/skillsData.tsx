@@ -18,25 +18,26 @@ export const skills: SkillsData = {
     'ESLint',
     'Webpack',
     'Vite',
+    'Jest',
+    'Vitest',
     'Git & GitHub',
-    'VSCode',
   ],
-  libraries: ['React', 'Ant Design'],
-  basics: ['Node.js', 'Jest', 'BEM'],
-  programs: ['Figma', 'Postman', 'Jira', 'AutoCAD', 'Paint.NET'],
+  libraries: ['React', 'Ant Design', 'Redux', 'Redux Toolkit', 'Yup'],
+  basics: ['Node.js', 'Next.js', 'BEM'],
+  programs: ['VSCode', 'Figma', 'Postman', 'Jira', 'AutoCAD', 'Paint.NET'],
   systems: ['Windows', 'Linux: Ubuntu'],
 };
 
 export const skillsText = {
   [Languages.RU]: {
-    technologies: 'Технологии',
+    technologies: 'Технологии и фреймворки',
     libraries: 'Библиотеки',
     basics: 'Основы',
     programs: 'Программы',
     systems: 'ОС',
   },
   [Languages.EN]: {
-    technologies: 'Technologies',
+    technologies: 'Technologies & Frameworks',
     libraries: 'Libraries',
     basics: 'Basics',
     programs: 'Programs',
