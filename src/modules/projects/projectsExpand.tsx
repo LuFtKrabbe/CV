@@ -22,6 +22,8 @@ const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): J
           className="projectsExpand-image"
           src={projectsExpand[language].picture}
           onClick={() => setIsOpen(!isOpen)}
+          alt={projectsExpand[language].altTitle}
+          title={projectsExpand[language].altTitle}
         ></img>
       </div>
       <div className="projectsExpand-container">

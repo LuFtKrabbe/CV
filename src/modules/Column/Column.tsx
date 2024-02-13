@@ -21,7 +21,7 @@ const Column: FC = (): JSX.Element => {
 
   return (
     <>
-      <img src={imageMe} className={styles.photo}></img>
+      <img src={imageMe} className={styles.photo} alt="Profile photo" title="Profile photo"></img>
       <div className={styles.contacts}>{ContactsBlock(contacts)}</div>
       <div className={styles.languages}>
         <div className={styles.title}>{columnData[language].titles.languages}</div>
