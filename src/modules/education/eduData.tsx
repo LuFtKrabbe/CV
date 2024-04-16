@@ -33,7 +33,8 @@ export const universityFirst: Record<Languages, EduData> = {
     honorText: 'with honor',
     degree: 'Bachelor of Science in Civil engineering',
     department: 'Department: Steel and Timber constructions.',
-    description: 'Graduation work is related to the design of the transportation hyperloop system made of steel.',
+    description: '',
+    //Graduation work is related to the design of the transportation hyperloop system made of steel.
   },
 };
 
@@ -58,7 +59,32 @@ export const universitySecond: Record<Languages, EduData> = {
     honorText: 'with honor',
     degree: 'Master of Science in Civil engineering',
     department: 'Department: Steel and Timber constructions.',
-    description:
-      'Analysis of the pre-stressed and large-span steel structures such as hyperloop and overhead power lines.',
+    description: '',
+    //Analysis of the pre-stressed and large-span steel structures such as hyperloop and overhead power lines.
+  },
+};
+
+export const universityCombo: Record<Languages, EduData> = {
+  [Languages.RU]: {
+    name: 'СПбГАСУ',
+    city: 'Санкт-Петербург',
+    yearStart: '2015',
+    yearFinish: '2021',
+    honor: true,
+    honorText: 'с отличием',
+    degree: 'Бакалавриат и Магистратура',
+    department: 'Кафедра металлических и деревянных конструкций.',
+    description: '',
+  },
+  [Languages.EN]: {
+    name: 'SPSUACE',
+    city: 'Saint Petersburg',
+    yearStart: '2015',
+    yearFinish: '2021',
+    honor: true,
+    honorText: 'with honor',
+    degree: 'Bachelor and Master of Science',
+    department: 'Department: Steel and Timber constructions.',
+    description: '',
   },
 };

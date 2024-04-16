@@ -24,7 +24,7 @@ export const aboutMeData: Record<Languages, AboutMeData> = {
     разработки Scrum, просмотром кода других участников и внесением замечаний и предложений.`,
     par3: `Люблю создавать проекты с нуля, принимая активное участие в развитии идеи и её реализации, а также выстраивать комфортное 
     взаимодействие между пользователем и программным интерфейсом. Имею хорошие организаторские навыки по планированию и контролю выполнения работ
-    при ведении проекта, оперативно решая возникающие вопросы.`,
+    при ведении проекта.`,
     par4: `Веду собственный pet-проект и планирую развитие в сторону fullstack-разработчика, в первую очередь начиная с изучения Node.js, а затем
     и остальных необходимых инструментов для работы с серверной частью и базами данных. Являюсь автором программы, занесенной в государственный 
     реестр программ для ЭВМ, а также разрабатываю программу расчёта для опор ВЛ, составляя математическую модель и используя MS Excel с VBA
@@ -46,7 +46,7 @@ export const aboutMeData: Record<Languages, AboutMeData> = {
     and suggestions.`,
     par3: `I like to create projects from scratch, taking an active part in development and the idea implementation. I like to 
     make a comfortable interfaces for easy interaction between the user and the program. I have good organizational skills in planning and 
-    monitoring the execution of work during the project, promptly resolving emerging issues.`,
+    monitoring the execution of work during the project.`,
     par4: `I am running my own pet project and planning to develop towards a full-stack developer, first of all by studying Node.js 
     and other necessary tools for working with the server part and databases. I am the author of a program included in the state register 
     of computer programs. Also I develop a calculation program for overhead line towers, creating a mathematical model and using MS Excel 

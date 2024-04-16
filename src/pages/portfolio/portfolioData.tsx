@@ -4,9 +4,9 @@ export type PortfolioData = {
   title: string;
   back: string;
   titles: {
-    commercial: string,
-    course: string,
-  }
+    commercial: string;
+    course: string;
+  };
 };
 
 export const portfolioData: Record<Languages, PortfolioData> = {
@@ -16,7 +16,7 @@ export const portfolioData: Record<Languages, PortfolioData> = {
     titles: {
       commercial: 'КОММЕРЧЕСКИЕ ПРОЕКТЫ',
       course: 'УЧЕБНЫЕ И КОМАНДНЫЕ ПРОЕКТЫ',
-    }
+    },
   },
   [Languages.EN]: {
     title: 'Portfolio',
@@ -24,6 +24,6 @@ export const portfolioData: Record<Languages, PortfolioData> = {
     titles: {
       commercial: 'COMMERCIAL PROJECTS',
       course: 'TRAINING AND TEAM PROJECTS',
-    }
+    },
   },
 };

@@ -15,9 +15,7 @@ const WorkBlock = (work: Record<Languages, WorkData>): JSX.Element => {
       <div className="work-name-city-years">
         <div className="work-name">{work[language].name}</div>
         <div className="work-city">{work[language].city}</div>
-        <div className="work-years">
-          {work[language].yearStart}-{work[language].yearFinish}
-        </div>
+        <div className="work-years">{work[language].workDates}</div>
       </div>
       <div className="work-degree-text">
         <div className="work-degree">{work[language].position}</div>

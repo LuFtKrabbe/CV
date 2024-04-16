@@ -3,10 +3,10 @@ import { FC, useContext } from 'react';
 import { langContext } from '../../language/langContext';
 
 import { Languages } from '../../types/enums';
-import { universityFirst, universitySecond } from '../education/eduData';
+import { universityCombo, universityFirst, universitySecond } from '../education/eduData';
 import EduBlock from '../education/education';
 import WorkBlock from '../work/work';
-import { workSecond, workThird } from '../work/workData';
+import { workFourth, workSecond, workThird } from '../work/workData';
 
 import styles from './AboutMe.module.scss';
 import { aboutMeData } from './aboutMeData';
@@ -39,6 +39,7 @@ const AboutMe: FC = (): JSX.Element => {
       */}
       <div className={styles.exprerience}>
         <div className={styles.title}>{aboutMeData[language].titles.work}</div>
+        <div className={styles.container}>{WorkBlock(workFourth)}</div>
         <div className={styles.container}>{WorkBlock(workThird)}</div>
         <div className={styles.container}>{WorkBlock(workSecond)}</div>
       </div>
@@ -55,8 +56,14 @@ const AboutMe: FC = (): JSX.Element => {
       <div className={styles.education}>
         <div className={styles.title}>{aboutMeData[language].titles.education}</div>
         <div className={styles.container}>
-          {EduBlock(universitySecond)}
-          {/* {EduBlock(universityFirst)} */}
+          {language === Languages.RU ? (
+            EduBlock(universityCombo)
+          ) : (
+            <>
+              {EduBlock(universitySecond)}
+              {EduBlock(universityFirst)}
+            </>
+          )}
         </div>
       </div>
     </>
