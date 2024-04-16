@@ -21,7 +21,10 @@ const WorkBlock = (work: Record<Languages, WorkData>): JSX.Element => {
       </div>
       <div className="work-degree-text">
         <div className="work-degree">{work[language].position}</div>
-        <div className="work-text">{work[language].description}</div>
+        <div className="work-text">{work[language].description[0]}</div>
+        <div className="work-text">{work[language].list?.map((list, index) => <li key={index}>{list}</li>)}</div>
+        <div className="work-text">{work[language].description[1]}</div>
+        <div className="work-text">{work[language].list2?.map((list, index) => <li key={index}>{list}</li>)}</div>
       </div>
     </div>
   );

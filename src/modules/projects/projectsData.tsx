@@ -1,4 +1,5 @@
 import imageCommerce from '../../assets/projects/commerce.webp';
+import imageConvex from '../../assets/projects/convex.webp';
 import imageGraphiQL from '../../assets/projects/graphiql.webp';
 import imageImperial from '../../assets/projects/imperial.webp';
 import imageKeyboard from '../../assets/projects/keyboard.webp';
@@ -6,9 +7,11 @@ import imageMinesweeper from '../../assets/projects/minesweeper.webp';
 import imageMomentum from '../../assets/projects/momentum.webp';
 import imageNewsletter from '../../assets/projects/newsletter.webp';
 import imagePlants from '../../assets/projects/plants.webp';
+import imagePsychologyCandle from '../../assets/projects/psychology-candle.webp';
 import imageRace from '../../assets/projects/race.webp';
 import imageSelectors from '../../assets/projects/selectors.webp';
 import imageShelter from '../../assets/projects/shelter.webp';
+import imageTFPImpulse from '../../assets/projects/tfp-impulse.webp';
 
 import { Languages } from '../../types/enums';
 
@@ -312,5 +315,83 @@ export const projectsGraphiQL: Record<Languages, ProjectsData> = {
     descriptionExpand: `This App supports any open user-specified GraphQL API and includes the authorization and 
     authentication capabilities, ensuring access only for authorized users. Features: syntax highlighting, 
     documentation explorer, text prettifying for queries, two languages and responsive design.`,
+  },
+};
+
+export const projectsMachinery: Record<Languages, ProjectsData> = {
+  [Languages.RU]: {
+    name: 'TFP Impulse',
+    type: 'Landing page',
+    linkDeploy: 'https://tfp-impulse.ru/',
+    linkRepo: '',
+    picture: imageTFPImpulse,
+    altTitle: 'TFP Impulse скриншот',
+    description: `Сайт для продажи услуг по обработке и изготовлению деталей для различных отраслей производства.`,
+    descriptionExpand: `Сайт для продажи услуг по обработке и изготовлению деталей для различных отраслей производства.
+    Проект выполнен на Next.js с использованием статичного экспорта и полной настройкой SEO-данных и их особенностей.`,
+  },
+  [Languages.EN]: {
+    name: 'TFP Impulse',
+    type: 'Landing page',
+    linkDeploy: 'https://tfp-impulse.ru/',
+    linkRepo: '',
+    picture: imageTFPImpulse,
+    altTitle: 'TFP Impulse screenshot',
+    description: `A website for the service sales of processing and manufacturing of parts for various industries.`,
+    descriptionExpand: `A website for the service sales of processing and manufacturing of parts for various industries. 
+    The project was completed on Next.js using static export and full customization of SEO data and its features.`,
+  },
+};
+
+export const projectsCandle: Record<Languages, ProjectsData> = {
+  [Languages.RU]: {
+    name: 'Psychology Candle',
+    type: 'Website',
+    linkDeploy: 'https://psychologycandle.ru',
+    linkRepo: '',
+    picture: imagePsychologyCandle,
+    altTitle: 'Psychology Candle скриншот',
+    description: `Сайт для продажи авторской продукции ручной работы с научным подходом из области психологии.`,
+    descriptionExpand: `Сайт для продажи авторской продукции с научным подходом из области психологии.
+    Проект выполнен на Next.js с использованием статичного экспорта, SEO-оптимизаций, роутинга, а также редиректами 
+    со стороны сервера для выполненных страниц на Tilda.`,
+  },
+  [Languages.EN]: {
+    name: 'Psychology Candle',
+    type: 'Website',
+    linkDeploy: 'https://psychologycandle.ru',
+    linkRepo: '',
+    picture: imagePsychologyCandle,
+    altTitle: 'Psychology Candle screenshot',
+    description: `A website for the author's handmade products sales with a scientific psychology approach.`,
+    descriptionExpand: `The project was completed on Next.js using static export, SEO optimization, routing, as well 
+    as redirects from the outside servers for completed pages on Tilda.`,
+  },
+};
+
+export const projectsConvex: Record<Languages, ProjectsData> = {
+  [Languages.RU]: {
+    name: 'Convex',
+    type: 'Website',
+    linkDeploy: 'https://nt.convex.ru/',
+    linkRepo: '',
+    picture: imageConvex,
+    altTitle: 'Convex скриншот',
+    description: `Сайт компании, предоставляющей доступ в интернет и к цифровому ТВ.`,
+    descriptionExpand: `Сайт компании, предоставляющей доступ в интернет и к цифровому ТВ. Проект выполнен на 1С-Битрикс 
+    и требует поддержки в виде создания и редактирования контента, а также администрирования с настройкой доступа, 
+    безопасностью и других инструментов панели.`,
+  },
+  [Languages.EN]: {
+    name: 'Convex',
+    type: 'Website',
+    linkDeploy: 'https://nt.convex.ru/',
+    linkRepo: '',
+    picture: imageConvex,
+    altTitle: 'Convex screenshot',
+    description: `Team work project is a playground for GraphQL requests which supports any open user-specified GraphQL API.`,
+    descriptionExpand: `The website of the company providing Internet and digital TV access. The project is executed on 
+    1C-Bitrix and requires support in the form of creating and editing content, as well as administration with access 
+    settings, security and other dashboard tools`,
   },
 };

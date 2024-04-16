@@ -34,10 +34,16 @@ const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): J
           <a href={projectsExpand[language].linkDeploy} className="projectsExpand-link">
             Deploy
           </a>
-          &nbsp;·&nbsp;
-          <a href={projectsExpand[language].linkRepo} className="projectsExpand-link">
-            GitHub
-          </a>
+          {projectsExpand[language].linkRepo ? (
+            <>
+              &nbsp;·&nbsp;
+              <a href={projectsExpand[language].linkRepo} className="projectsExpand-link">
+                GitHub
+              </a>
+            </>
+          ) : (
+            ''
+          )}
         </div>
         <div className="projectsExpand-description">{projectsExpand[language].descriptionExpand}</div>
       </div>

@@ -3,14 +3,10 @@ import { FC, useContext } from 'react';
 import { langContext } from '../../language/langContext';
 
 import { Languages } from '../../types/enums';
-import CoursesBlock from '../courses/courses';
-import { coursesAWS, coursesFrontEnd, coursesNode, coursesReact } from '../courses/coursesData';
 import { universityFirst, universitySecond } from '../education/eduData';
 import EduBlock from '../education/education';
-import ProjectsBlock from '../projects/projects';
-import { projectsCommerce, projectsGraphiQL, projectsMinesweeper } from '../projects/projectsData';
 import WorkBlock from '../work/work';
-import { workFirst } from '../work/workData';
+import { workSecond, workThird } from '../work/workData';
 
 import styles from './AboutMe.module.scss';
 import { aboutMeData } from './aboutMeData';
@@ -28,8 +24,10 @@ const AboutMe: FC = (): JSX.Element => {
           <div style={language === Languages.RU ? { lineHeight: '1.25rem' } : {}}>{aboutMeData[language].par1}</div>
           <div style={language === Languages.RU ? { lineHeight: '1.25rem' } : {}}>{aboutMeData[language].par2}</div>
           <div style={language === Languages.RU ? { lineHeight: '1.25rem' } : {}}>{aboutMeData[language].par3}</div>
+          <div style={language === Languages.RU ? { lineHeight: '1.25rem' } : {}}>{aboutMeData[language].par4}</div>
         </div>
       </div>
+      {/*   
       <div className={styles.projects}>
         <div className={styles.title}>{aboutMeData[language].titles.projects}</div>
         <div className={styles.container}>
@@ -37,25 +35,28 @@ const AboutMe: FC = (): JSX.Element => {
           {ProjectsBlock(projectsCommerce)}
           {ProjectsBlock(projectsMinesweeper)}
         </div>
+      </div> 
+      */}
+      <div className={styles.exprerience}>
+        <div className={styles.title}>{aboutMeData[language].titles.work}</div>
+        <div className={styles.container}>{WorkBlock(workThird)}</div>
+        <div className={styles.container}>{WorkBlock(workSecond)}</div>
       </div>
+      {/*
       <div className={styles.courses}>
         <div className={styles.title}>{aboutMeData[language].titles.courses}</div>
         <div className={styles.container}>
-          {CoursesBlock(coursesNode)}
           {CoursesBlock(coursesReact)}
           {CoursesBlock(coursesAWS)}
           {CoursesBlock(coursesFrontEnd)}
         </div>
       </div>
-      <div className={styles.exprerience}>
-        <div className={styles.title}>{aboutMeData[language].titles.work}</div>
-        <div className={styles.container}>{WorkBlock(workFirst)}</div>
-      </div>
+      */}
       <div className={styles.education}>
         <div className={styles.title}>{aboutMeData[language].titles.education}</div>
         <div className={styles.container}>
           {EduBlock(universitySecond)}
-          {EduBlock(universityFirst)}
+          {/* {EduBlock(universityFirst)} */}
         </div>
       </div>
     </>

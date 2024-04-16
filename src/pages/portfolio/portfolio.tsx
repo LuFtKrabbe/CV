@@ -5,15 +5,15 @@ import { NavLink } from 'react-router-dom';
 import { langContext } from '../../language/langContext';
 
 import {
+  projectsCandle,
   projectsCommerce,
+  projectsConvex,
   projectsGraphiQL,
   projectsImperialDB,
   projectsKeyboard,
+  projectsMachinery,
   projectsMinesweeper,
   projectsMomentum,
-  projectsPlants,
-  projectsSelectors,
-  projectsShelter,
 } from '../../modules/projects/projectsData';
 import ProjectsExpandBlock from '../../modules/projects/projectsExpand';
 
@@ -35,15 +35,17 @@ const Portfolio: FC = (): JSX.Element => {
             </NavLink>
           </div>
           <div className="portfolio-content-main">
+            <div className="portfolio-content-section-title">{portfolioData[language].titles.commercial}</div>
+            {ProjectsExpandBlock(projectsConvex)}
+            {ProjectsExpandBlock(projectsCandle)}
+            {ProjectsExpandBlock(projectsMachinery)}
+            <div className="portfolio-content-section-title">{portfolioData[language].titles.course}</div>
             {ProjectsExpandBlock(projectsGraphiQL)}
             {ProjectsExpandBlock(projectsImperialDB)}
             {ProjectsExpandBlock(projectsCommerce)}
-            {ProjectsExpandBlock(projectsSelectors)}
             {ProjectsExpandBlock(projectsMinesweeper)}
             {ProjectsExpandBlock(projectsKeyboard)}
-            {ProjectsExpandBlock(projectsShelter)}
             {ProjectsExpandBlock(projectsMomentum)}
-            {ProjectsExpandBlock(projectsPlants)}
           </div>
         </div>
       </div>
