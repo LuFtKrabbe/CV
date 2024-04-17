@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.ecfec73b.css",
-    "main.js": "/CV/static/js/main.b0c32c9c.js",
+    "main.css": "/CV/static/css/main.f707171a.css",
+    "main.js": "/CV/static/js/main.d3f821e8.js",
     "static/js/787.b701888c.chunk.js": "/CV/static/js/787.b701888c.chunk.js",
     "static/media/me.png": "/CV/static/media/me.d5d3266671f35ccf3783.png",
+    "static/media/tfp-impulse.webp": "/CV/static/media/tfp-impulse.bfc18b49589ee622fa1a.webp",
     "static/media/transportation.png": "/CV/static/media/transportation.a61cf50e0b13edb90473.png",
     "static/media/shelter.webp": "/CV/static/media/shelter.58e7e6caadf035a72d93.webp",
     "static/media/architecture.png": "/CV/static/media/architecture.d8ce3c6b31334a583b6a.png",
     "static/media/english.png": "/CV/static/media/english.a8b00a0e1c9db67d0da3.png",
     "static/media/newsletter.webp": "/CV/static/media/newsletter.db8dd53e4834a9356d90.webp",
+    "static/media/convex.webp": "/CV/static/media/convex.001132196b1ac04815d7.webp",
     "static/media/momentum.webp": "/CV/static/media/momentum.5ff222554a54adb770d5.webp",
     "static/media/graphiql.webp": "/CV/static/media/graphiql.a41204d12eaf84c95247.webp",
+    "static/media/psychology-candle.webp": "/CV/static/media/psychology-candle.96297fbabd81e5f7fc88.webp",
     "static/media/imperial.webp": "/CV/static/media/imperial.b5ad2507f017fe40925b.webp",
     "static/media/plants.webp": "/CV/static/media/plants.1175035e7e02fd7ebc90.webp",
     "static/media/minesweeper.webp": "/CV/static/media/minesweeper.aa63ede0a2a5295447e2.webp",
@@ -27,12 +30,12 @@
     "static/media/ms-typescript.png": "/CV/static/media/ms-typescript.5f3dc35569402b950eca.png",
     "static/media/aws-badge-cloud-practitioner.png": "/CV/static/media/aws-badge-cloud-practitioner.04db982b673725600b05.png",
     "index.html": "/CV/index.html",
-    "main.ecfec73b.css.map": "/CV/static/css/main.ecfec73b.css.map",
-    "main.b0c32c9c.js.map": "/CV/static/js/main.b0c32c9c.js.map",
+    "main.f707171a.css.map": "/CV/static/css/main.f707171a.css.map",
+    "main.d3f821e8.js.map": "/CV/static/js/main.d3f821e8.js.map",
     "787.b701888c.chunk.js.map": "/CV/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecfec73b.css",
-    "static/js/main.b0c32c9c.js"
+    "static/css/main.f707171a.css",
+    "static/js/main.d3f821e8.js"
   ]
 }
