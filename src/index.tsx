@@ -11,6 +11,7 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
+    <meta name="viewport" content="width=800" />
     <HashRouter>
       <App />
     </HashRouter>
