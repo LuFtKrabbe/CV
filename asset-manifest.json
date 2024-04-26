@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CV/static/css/main.f707171a.css",
-    "main.js": "/CV/static/js/main.d3f821e8.js",
+    "main.js": "/CV/static/js/main.1c06dc04.js",
     "static/js/787.b701888c.chunk.js": "/CV/static/js/787.b701888c.chunk.js",
     "static/media/me.png": "/CV/static/media/me.d5d3266671f35ccf3783.png",
     "static/media/tfp-impulse.webp": "/CV/static/media/tfp-impulse.bfc18b49589ee622fa1a.webp",
@@ -31,11 +31,11 @@
     "static/media/aws-badge-cloud-practitioner.png": "/CV/static/media/aws-badge-cloud-practitioner.04db982b673725600b05.png",
     "index.html": "/CV/index.html",
     "main.f707171a.css.map": "/CV/static/css/main.f707171a.css.map",
-    "main.d3f821e8.js.map": "/CV/static/js/main.d3f821e8.js.map",
+    "main.1c06dc04.js.map": "/CV/static/js/main.1c06dc04.js.map",
     "787.b701888c.chunk.js.map": "/CV/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f707171a.css",
-    "static/js/main.d3f821e8.js"
+    "static/js/main.1c06dc04.js"
   ]
 }
