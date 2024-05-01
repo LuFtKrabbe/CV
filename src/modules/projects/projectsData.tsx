@@ -57,7 +57,7 @@ export const projectsMomentum: Record<Languages, ProjectsData> = {
   [Languages.RU]: {
     name: 'Momentum',
     type: 'Functional application',
-    linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFEPRESCHOOL2022Q4/momentum/',
+    linkDeploy: 'https://momentum-luftkrabbe.netlify.app',
     linkRepo: 'https://github.com/LuFtKrabbe/momentum/tree/momentum/momentum',
     picture: imageMomentum,
     altTitle: 'Momentum скриншот',
@@ -68,7 +68,7 @@ export const projectsMomentum: Record<Languages, ProjectsData> = {
   [Languages.EN]: {
     name: 'Momentum',
     type: 'Functional application',
-    linkDeploy: 'https://rolling-scopes-school.github.io/luftkrabbe-JSFEPRESCHOOL2022Q4/momentum/',
+    linkDeploy: 'https://momentum-luftkrabbe.netlify.app',
     linkRepo: 'https://github.com/LuFtKrabbe/momentum/tree/momentum/momentum',
     picture: imageMomentum,
     altTitle: 'Momentum screenshot',
@@ -108,7 +108,7 @@ export const projectsKeyboard: Record<Languages, ProjectsData> = {
   [Languages.RU]: {
     name: 'Virtual Keyboard',
     type: 'Functional application',
-    linkDeploy: 'https://luftkrabbe.github.io/virtual-keyboard/src/index.html',
+    linkDeploy: 'https://virtual-keyboard-luftkrabbe.netlify.app',
     linkRepo: 'https://github.com/LuFtKrabbe/virtual-keyboard/tree/development',
     picture: imageKeyboard,
     altTitle: 'Virtual Keyboard скриншот',
@@ -120,7 +120,7 @@ export const projectsKeyboard: Record<Languages, ProjectsData> = {
   [Languages.EN]: {
     name: 'Virtual Keyboard',
     type: 'Functional application',
-    linkDeploy: 'https://luftkrabbe.github.io/virtual-keyboard/src/index.html',
+    linkDeploy: 'https://virtual-keyboard-luftkrabbe.netlify.app',
     linkRepo: 'https://github.com/LuFtKrabbe/virtual-keyboard/tree/development',
     picture: imageKeyboard,
     altTitle: 'Virtual Keyboard screenshot',
@@ -239,7 +239,7 @@ export const projectsCommerce: Record<Languages, ProjectsData> = {
   [Languages.RU]: {
     name: 'Blocks&Beams',
     type: 'E-commerce SPA',
-    linkDeploy: 'https://blocks-n-beams.netlify.app/main',
+    linkDeploy: 'https://blocks-n-beams.netlify.app/about-us',
     linkRepo: 'https://github.com/LuFtKrabbe/blocks-n-beams',
     picture: imageCommerce,
     altTitle: 'Blocks&Beams скриншот',
@@ -252,7 +252,7 @@ export const projectsCommerce: Record<Languages, ProjectsData> = {
   [Languages.EN]: {
     name: 'Blocks&Beams',
     type: 'E-commerce SPA',
-    linkDeploy: 'https://blocks-n-beams.netlify.app/main',
+    linkDeploy: 'https://blocks-n-beams.netlify.app/about-us',
     linkRepo: 'https://github.com/LuFtKrabbe/blocks-n-beams',
     picture: imageCommerce,
     altTitle: 'Blocks&Beams screenshot',

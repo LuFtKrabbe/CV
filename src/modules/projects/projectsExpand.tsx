@@ -7,7 +7,7 @@ import PopUp from '../PopUp/PopUp';
 
 import { ProjectsData } from './projectsData';
 
-const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): JSX.Element => {
+const ProjectsExpandBlock = ({ project }: { project: Record<Languages, ProjectsData> }): JSX.Element => {
   const {
     state: { language },
   } = useContext(langContext);
@@ -20,24 +20,24 @@ const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): J
       <div className="projectsExpand-imageContainer">
         <img
           className="projectsExpand-image"
-          src={projectsExpand[language].picture}
+          src={project[language].picture}
           onClick={() => setIsOpen(!isOpen)}
-          alt={projectsExpand[language].altTitle}
-          title={projectsExpand[language].altTitle}
+          alt={project[language].altTitle}
+          title={project[language].altTitle}
         ></img>
       </div>
       <div className="projectsExpand-container">
-        <div className="projectsExpand-name">{projectsExpand[language].name}</div>
+        <div className="projectsExpand-name">{project[language].name}</div>
         <div className="projectsExpand-type">
-          {projectsExpand[language].type}
+          {project[language].type}
           &nbsp;·&nbsp;
-          <a href={projectsExpand[language].linkDeploy} className="projectsExpand-link">
+          <a href={project[language].linkDeploy} className="projectsExpand-link">
             Deploy
           </a>
-          {projectsExpand[language].linkRepo ? (
+          {project[language].linkRepo ? (
             <>
               &nbsp;·&nbsp;
-              <a href={projectsExpand[language].linkRepo} className="projectsExpand-link">
+              <a href={project[language].linkRepo} className="projectsExpand-link">
                 GitHub
               </a>
             </>
@@ -45,9 +45,9 @@ const ProjectsExpandBlock = (projectsExpand: Record<Languages, ProjectsData>): J
             ''
           )}
         </div>
-        <div className="projectsExpand-description">{projectsExpand[language].descriptionExpand}</div>
+        <div className="projectsExpand-description">{project[language].descriptionExpand}</div>
       </div>
-      {isOpen ? <PopUp imgPath={projectsExpand[language].picture} setIsOpenFalseCb={setIsOpenFalseCb} /> : <div />}
+      {isOpen ? <PopUp imgPath={project[language].picture} setIsOpenFalseCb={setIsOpenFalseCb} /> : <div />}
     </div>
   );
 };
